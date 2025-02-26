@@ -229,6 +229,18 @@ const handleClick=()=>{
             </li>
             <li>
               <NavLink
+                to="/faqs"
+                className={({ isActive }) =>
+                  isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                }
+              
+                 onClick={handleMobileHistory}
+              >
+                FAQs
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/contact-us"
                 className={({ isActive }) =>
                   isActive ? 'text-red-500 font-bold' : 'text-gray-700'
