@@ -71,10 +71,10 @@ const handleClick=()=>{
              onClick={handleHistory}>About Us</NavLink>
           </li>
           
-          <li>
+          {/* <li>
             <NavLink activeClass="active"  to="/our-gallery"
              onClick={handleHistory}>Services</NavLink>
-          </li>
+          </li> */}
           <li className="nav-item gallery-dropdown">
             <span>Our Gallery</span>
             <ArrowDropDownIcon/>
@@ -148,7 +148,7 @@ const handleClick=()=>{
             </li>
             <li>
               <NavLink
-                to="/AboutUs"
+                to="/about-us"
                 className={({ isActive }) =>
                   isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                 }
@@ -158,7 +158,7 @@ const handleClick=()=>{
                 About Us
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
@@ -169,17 +169,17 @@ const handleClick=()=>{
               >
                 Services
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
-                to="/menu"
+                to="/blogs"
                 className={({ isActive }) =>
                   isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                 }
                
                  onClick={handleMobileHistory}
               >
-                Menu
+                Blogs
               </NavLink>
             </li>
             <li>
@@ -187,7 +187,7 @@ const handleClick=()=>{
                 className="focus:outline-none mb-2"
                 onClick={() => setIsGalleryOpen(!isGalleryOpen)}
               >
-                Gallery
+                Our Gallery
                 <ArrowDropDownIcon />
               </button>
               {isGalleryOpen && (
