@@ -30,8 +30,8 @@
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 70px;
     border-radius: 5px;
 }
 
@@ -40,18 +40,18 @@
 }
 
 .brand h1 {
-    font-size: 21px;
-    color: #d32f2f;
+    font-size: 30px;
+    color: gold;
     margin: 0;
-    font-weight: 250;
-    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    
 }
 
 .brand p {
     font-size: 16px; 
     color: #333; 
     margin: 0;
-    font-family: 'Lobster', cursive; 
+    font-family: 'Lobster'; 
     letter-spacing: 0.3px;
   }
   
