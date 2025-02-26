@@ -3,7 +3,7 @@ import "./Navbar.css";
 import Hamburger from "hamburger-react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-// import ReactTypingEffect from "react-typing-effect";
+import Logo from '../../Assets/logo.png';
 import { motion} from 'framer-motion';
 // import UiButton from "../Button/UiButton";
 
@@ -46,25 +46,15 @@ const handleClick=()=>{
       <div className="navbar-left  ">
         <Link to="/"
          onClick={handleHistory}>  
-          <img src="logo.png" alt="Avishree-Logo" className="logo" />
+          <img src={Logo} alt="Logo" className="logo" />
         </Link>
         <div className="brand">
           <NavLink to="/"
            onClick={handleHistory}>
            
-            <h1>Avishree Hospitality Pvt. Ltd.</h1>
+            <h1>Global Stars</h1>
           </NavLink>
-          {/* <p>
-          <ReactTypingEffect
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              text={[
-                "Crafting unfogettable Memories",
-              ]}
-            />
-          </p> */}
+          
         </div>
       </div>
 
@@ -77,19 +67,16 @@ const handleClick=()=>{
              onClick={handleHistory}>Home</NavLink>
           </li>
           <li>
-            <NavLink activeClass="active"  to="/AboutUs"
+            <NavLink activeClass="active"  to="/about-us"
              onClick={handleHistory}>About Us</NavLink>
           </li>
+          
           <li>
-            <NavLink activeClass="active"  to="/services"
+            <NavLink activeClass="active"  to="/our-gallery"
              onClick={handleHistory}>Services</NavLink>
           </li>
-          <li>
-            <NavLink activeClass="active"  to="/menu"
-             onClick={handleHistory}>Menu</NavLink>
-          </li>
           <li className="nav-item gallery-dropdown">
-            <span>Gallery</span>
+            <span>Our Gallery</span>
             <ArrowDropDownIcon/>
             <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
               <li>
@@ -102,6 +89,15 @@ const handleClick=()=>{
               </li>
             </ul>
           </li>
+          
+          <li>
+            <NavLink activeClass="active"  to="/blogs"
+             onClick={handleHistory}>Blogs</NavLink>
+          </li>
+          <li>
+            <NavLink activeClass="active"  to="/faqs"
+             onClick={handleHistory}>FAQs</NavLink>
+          </li>
           <li>
             <NavLink activeClass="active"  to="/contact-us"
              onClick={handleHistory}>Contact Us</NavLink>
@@ -113,7 +109,7 @@ const handleClick=()=>{
         {/* <div>
           
           <UiButton  
-            title="Book Now"
+            title="Make an Appointment"
             fun={handleClick}
             />
           </div>  */}

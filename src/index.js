@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Components/Root/root';
+import { About, Blog, Contact, Faqs, Photo, Video } from './Components/Pages';
  
 const router = createBrowserRouter([
   {
@@ -15,15 +16,36 @@ const router = createBrowserRouter([
         element: <App />
       },
       {
+        path: 'about-us',
+        element: <About/>
+      },
+      {
+        path: 'contact-us',
+        element: <Contact/>
+      },
+      {
+        path: 'faqs',
+        element: <Faqs/>
+      },
+      {
+        path: 'blogs',
+        element: <Blog/>
+      },
+      {
+        path: 'videos',
+        element: <Video/>
+      },
+      {
+        path: 'photos',
+        element : <Photo/>
+      },
+      {
         path:"*",
         element: <h1>404 Not Found</h1>
       }
     ]
   },
-  // {
-  //   path:"*",
-  //   element: <h1>404 Not Found</h1>
-  // }
+ 
 ]);
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
