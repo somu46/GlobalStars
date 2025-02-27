@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-import { FaMapMarkerAlt, FaPhone, FaClock, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaClock, FaInstagram, FaFacebook, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
+
 
 const Contact = () => {
   const form = useRef();
@@ -110,13 +111,17 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <FaPhone className="text-amber-600" />
-                  <a href="tel:+441234567890" className="text-gray-700 hover:text-amber-700">
-                    +44 1234 567890
+                  <a href="tel:+911234567890" className="text-gray-700 hover:text-amber-700">
+                    +91 1234567890
                   </a>
                 </div>
                 <div className="flex items-center space-x-4">
                   <FaClock className="text-amber-600" />
-                  <p className="text-gray-700">Mon-Sat: 10am - 6pm</p>
+                  <p className="text-gray-700">Mon-Fri : 10am - 6pm</p>
+                </div>
+                <div className="flex items-center space-x-4">
+                <FaClock className="text-amber-600" />
+                <p className='text-gray-700'>Sat : 10am - 2pm</p>
                 </div>
               </div>
             </div>
@@ -129,6 +134,12 @@ const Contact = () => {
                 </a>
                 <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
                   <FaFacebook className="text-2xl" />
+                </a>
+                <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
+                  <FaTwitter className="text-2xl" />
+                </a>
+                <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
+                  <FaYoutube className="text-2xl" />
                 </a>
               </div>
             </div>
