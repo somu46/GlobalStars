@@ -52,7 +52,7 @@ const AboutUs = () => {
           
           <div className="rounded-lg overflow-hidden shadow-xl border-4 border-amber-100">
             <img 
-              src="https://images.unsplash.com/photo-1580508248873-2bd482a1e9d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
               alt="Antique Collection" 
               className="w-full h-full object-cover"
             />

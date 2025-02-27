@@ -52,11 +52,12 @@ const Home = () => {
       <div className="bg-amber-100 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">Why Collectors Trust Us</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {[
               {icon: <FaCertificate />, title: "Expert Authentication", text: "Multi-stage verification process with leading historians"},
               {icon: <FaBrush />, title: "Museum Conservation", text: "Traditional restoration techniques by master craftsmen"},
-              {icon: <FaHistory />, title: "Provenance Research", text: "Comprehensive historical documentation for every artifact"}
+              {icon: <FaHistory />, title: "Provenance Research", text: "Comprehensive historical documentation for every artifact"},
+              {icon: <FaShippingFast/>, title : "Secure Shipping", text: "Climate-controlled transportation with real-time tracking"},
             ].map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow">
                 <div className="text-4xl text-amber-600 mb-4 flex justify-center">{feature.icon}</div>

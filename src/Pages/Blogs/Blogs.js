@@ -38,8 +38,8 @@ const Blogs = () => {
             </p>
             <div className="flex items-center justify-between">
               <div className="flex space-x-2">
-                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Restoration</span>
-                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Book Arts</span>
+                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm"> <FaTags className='inline-block m-2'/>Restoration</span>
+                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm"> <FaTags className='inline-block m-2'/>Book Arts</span>
               </div>
               <button className="flex items-center text-amber-600 hover:text-amber-700">
                 Read More <FaArrowRight className="ml-2" />
@@ -70,12 +70,12 @@ const Blogs = () => {
                       key={index}
                       className="bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-sm"
                     >
-                      {tag}
+                      <FaTags className='inline-block m-2'/>{tag} 
                     </span>
                   ))}
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-amber-600">{blog.readTime}</span>
+                  {/* <span className="text-amber-600">{blog.}</span> */}
                   <button className="flex items-center text-amber-600 hover:text-amber-700">
                     Read More <FaArrowRight className="ml-2" />
                   </button>
