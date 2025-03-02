@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Faqs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -98,9 +99,9 @@ const Faqs = () => {
           <p className="text-gray-700 mb-6">
             Our curatorial team is available to assist with specialized inquiries
           </p>
-          <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+          <Link to='/contact-us' className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors" >
             Contact Our Experts
-          </button>
+          </Link>
         </div>
       </div>
     </div>

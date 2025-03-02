@@ -135,10 +135,10 @@ const Contact = () => {
                 <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
                   <FaFacebook className="text-2xl" />
                 </a>
-                <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
+                <a href="https://x.com" className="text-amber-600 hover:text-amber-700">
                   <FaTwitter className="text-2xl" />
                 </a>
-                <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
+                <a href="https://youtube.com" className="text-amber-600 hover:text-amber-700">
                   <FaYoutube className="text-2xl" />
                 </a>
               </div>

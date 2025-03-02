@@ -77,7 +77,7 @@ const Footer = () => {
           {/* Quick Features Section */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-center">Quick Services</h4>
-            <ul className="space-y-2 text-center">
+            {/* <ul className="space-y-2 text-center">
               <li onClick={handleScrolle}>
                 <Link to="/essentials/prayer-times" className="text-sm text-gray-300 hover:text-amber-400 transition">
                   Prayer Times
@@ -113,7 +113,7 @@ const Footer = () => {
                   Qibla Direction
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
 
           {/* Contact Section */}
