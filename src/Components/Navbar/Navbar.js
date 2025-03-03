@@ -5,7 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Logo from '../../Assets/logo.png';
 import { motion} from 'framer-motion';
-// import UiButton from "../Button/UiButton";
+import Button from "../UiCom/Button";
 
 
 const variants = {
@@ -71,10 +71,36 @@ const handleClick=()=>{
              onClick={handleHistory}>About Us</NavLink>
           </li>
           
-          {/* <li>
-            <NavLink activeClass="active"  to="/our-gallery"
-             onClick={handleHistory}>Services</NavLink>
-          </li> */}
+          <li className="nav-item gallery-dropdown">
+            <span>Services</span>
+            <ArrowDropDownIcon/>
+            <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
+              <li>
+                <NavLink activeClass="active"   to="/videos"
+                 onClick={handleHistory}>Land Remediation</NavLink>
+              </li>
+              <li>
+                <NavLink activeClass="active"   to="/Photos"
+                 onClick={handleHistory}>Radiation Safety and Protection</NavLink>
+              </li>
+              <li>
+                <NavLink activeClass="active"   to="/Photos"
+                onClick={handleHistory}>Litigation Support</NavLink>
+              </li>
+              <li>
+                <NavLink activeClass="active"   to="/Photos"
+                onClick={handleHistory}>Environmental Protection</NavLink>
+              </li>
+              <li>
+                <NavLink activeClass="active"   to="/Photos"
+                onClick={handleHistory}>Boroscope Inspection</NavLink>
+              </li>
+              <li>
+                <NavLink activeClass="active"   to="/Photos"
+                onClick={handleHistory}>Testing and Analysis</NavLink>
+              </li>
+            </ul>
+          </li>
           <li className="nav-item gallery-dropdown">
             <span>Our Gallery</span>
             <ArrowDropDownIcon/>
@@ -106,13 +132,9 @@ const handleClick=()=>{
         </ul>
         
          
-        {/* <div>
-          
-          <UiButton  
-            title="Make an Appointment"
-            fun={handleClick}
-            />
-          </div>  */}
+        <div>
+          <Button title="Make an Appointment" fun={handleClick}/>
+          </div> 
        
       </div>
 
@@ -158,18 +180,115 @@ const handleClick=()=>{
                 About Us
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink
-                to="/services"
-                className={({ isActive }) =>
-                  isActive ? 'text-red-500 font-bold' : 'text-gray-700'
-                }
-             
-                 onClick={handleMobileHistory}
+            <li>
+              <button
+                className="focus:outline-none mb-2"
+                onClick={() => setIsGalleryOpen(!isGalleryOpen)}
               >
                 Services
-              </NavLink>
-            </li> */}
+                <ArrowDropDownIcon />
+              </button>
+              {isGalleryOpen && (
+                <ul className="pl-4 space-y-2">
+                  <li>
+                    <NavLink
+                      to="/photos"
+                      className={({ isActive }) =>
+                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                      }
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsGalleryOpen(false);
+                        handleMobileHistory();
+                      }}
+                       
+                    >
+                      Land Remediation
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/videos"
+                      className={({ isActive }) =>
+                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                      }
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsGalleryOpen(false);
+                        handleMobileHistory();
+                      }}
+                      
+                    >
+                      Radiation Safety and Protection
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/videos"
+                      className={({ isActive }) =>
+                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                      }
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsGalleryOpen(false);
+                        handleMobileHistory();
+                      }}
+                      
+                    >
+                      Litigation Support
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/videos"
+                      className={({ isActive }) =>
+                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                      }
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsGalleryOpen(false);
+                        handleMobileHistory();
+                      }}
+                      
+                    >
+                      Environmental Protection
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/videos"
+                      className={({ isActive }) =>
+                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                      }
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsGalleryOpen(false);
+                        handleMobileHistory();
+                      }}
+                      
+                    >
+                      Borescope Inspection
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/videos"
+                      className={({ isActive }) =>
+                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                      }
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsGalleryOpen(false);
+                        handleMobileHistory();
+                      }}
+                      
+                    >
+                      Testing and Analysis
+                    </NavLink>
+                  </li>
+                </ul>
+              )}
+            </li>
             <li>
               <NavLink
                 to="/blogs"
@@ -224,6 +343,7 @@ const handleClick=()=>{
                       Videos
                     </NavLink>
                   </li>
+                 
                 </ul>
               )}
             </li>
@@ -251,13 +371,13 @@ const handleClick=()=>{
                 Contact Us
               </NavLink>
             </li>
-            {/* <li>
+            <li>
               
-            <UiButton  
-            title="Book Now"
+            <Button  
+            title="Make An Appointment"
             fun={handleClick}
             />
-            </li> */}
+            </li>
           </ul>
         </nav>
       </motion.div>
