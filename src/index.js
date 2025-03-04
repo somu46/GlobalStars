@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Components/Root/root';
-import { About, Blog, Contact, Faqs, Photo, Video } from './Pages';
+import { About, Blog, Contact, Faqs, LitigationSupport, Photo, Video ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem } from './Pages';
  
 const router = createBrowserRouter([
   {
@@ -38,6 +38,34 @@ const router = createBrowserRouter([
       {
         path: 'photos',
         element : <Photo/>
+      },
+      {
+        path: 'land-remediation',
+        element: <LandRem/>
+      },
+      {
+        path: 'radiation-safety-protection',
+        element: <RadiationSafety/>
+      },
+      {
+        path: 'litigation-support',
+        element: <LitigationSupport/>
+      },
+      {
+        path: 'radiation-safety-protection',
+        element: <RadiationSafety/>
+      },
+      {
+        path: 'environmental-protection',
+        element: <EnvironmentalP/>
+      },
+      {
+        path: 'boroscope-inspection',
+        element: <BoroscopeInspection/>
+      },
+      {
+        path: 'testing-analysis',
+        element: <TestAnal/>
       },
       {
         path:"*",

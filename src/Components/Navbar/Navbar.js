@@ -76,27 +76,27 @@ const handleClick=()=>{
             <ArrowDropDownIcon/>
             <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
               <li>
-                <NavLink activeClass="active"   to="/videos"
+                <NavLink activeClass="active"   to="/land-remediation"
                  onClick={handleHistory}>Land Remediation</NavLink>
               </li>
               <li>
-                <NavLink activeClass="active"   to="/Photos"
+                <NavLink activeClass="active"   to="/radiation-safety-protection"
                  onClick={handleHistory}>Radiation Safety and Protection</NavLink>
               </li>
               <li>
-                <NavLink activeClass="active"   to="/Photos"
+                <NavLink activeClass="active"   to="/litigation-support"
                 onClick={handleHistory}>Litigation Support</NavLink>
               </li>
               <li>
-                <NavLink activeClass="active"   to="/Photos"
+                <NavLink activeClass="active"   to="/environmental-protection"
                 onClick={handleHistory}>Environmental Protection</NavLink>
               </li>
               <li>
-                <NavLink activeClass="active"   to="/Photos"
+                <NavLink activeClass="active"   to="/boroscope-inspection"
                 onClick={handleHistory}>Boroscope Inspection</NavLink>
               </li>
               <li>
-                <NavLink activeClass="active"   to="/Photos"
+                <NavLink activeClass="active"   to="/testing-analysis"
                 onClick={handleHistory}>Testing and Analysis</NavLink>
               </li>
             </ul>
