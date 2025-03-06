@@ -24,6 +24,7 @@ const variants = {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
  const navigate=useNavigate();
 
  const handleHistory=()=>{
@@ -71,7 +72,7 @@ const handleClick=()=>{
              onClick={handleHistory}>About Us</NavLink>
           </li>
           
-          <li className="nav-item gallery-dropdown">
+          <li className="nav-item gallery-dropdown flex flex-row">
             <span>Services</span>
             <ArrowDropDownIcon/>
             <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
@@ -101,7 +102,7 @@ const handleClick=()=>{
               </li>
             </ul>
           </li>
-          <li className="nav-item gallery-dropdown">
+          <li className="nav-item gallery-dropdown flex flex-row ">
             <span>Our Gallery</span>
             <ArrowDropDownIcon/>
             <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
@@ -183,22 +184,21 @@ const handleClick=()=>{
             <li>
               <button
                 className="focus:outline-none mb-2"
-                onClick={() => setIsGalleryOpen(!isGalleryOpen)}
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
               >
                 Services
                 <ArrowDropDownIcon />
               </button>
-              {isGalleryOpen && (
+              {isServicesOpen && (
                 <ul className="pl-4 space-y-2">
                   <li>
                     <NavLink
-                      to="/photos"
+                      to="/land-remediation"
                       className={({ isActive }) =>
                         isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                       }
                       onClick={() => {
-                        setIsOpen(false);
-                        setIsGalleryOpen(false);
+                        setIsServicesOpen(false);
                         handleMobileHistory();
                       }}
                        
@@ -208,13 +208,13 @@ const handleClick=()=>{
                   </li>
                   <li>
                     <NavLink
-                      to="/videos"
+                      to="/radiation-safety-protection"
                       className={({ isActive }) =>
                         isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                       }
                       onClick={() => {
                         setIsOpen(false);
-                        setIsGalleryOpen(false);
+                        setIsServicesOpen(false);
                         handleMobileHistory();
                       }}
                       
@@ -224,13 +224,13 @@ const handleClick=()=>{
                   </li>
                   <li>
                     <NavLink
-                      to="/videos"
+                      to="/litigation-support"
                       className={({ isActive }) =>
                         isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                       }
                       onClick={() => {
                         setIsOpen(false);
-                        setIsGalleryOpen(false);
+                        setIsServicesOpen(false);
                         handleMobileHistory();
                       }}
                       
@@ -240,13 +240,13 @@ const handleClick=()=>{
                   </li>
                   <li>
                     <NavLink
-                      to="/videos"
+                      to="/environmental-protection"
                       className={({ isActive }) =>
                         isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                       }
                       onClick={() => {
                         setIsOpen(false);
-                        setIsGalleryOpen(false);
+                        setIsServicesOpen(false);
                         handleMobileHistory();
                       }}
                       
@@ -256,13 +256,13 @@ const handleClick=()=>{
                   </li>
                   <li>
                     <NavLink
-                      to="/videos"
+                      to="/boroscope-inspection"
                       className={({ isActive }) =>
                         isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                       }
                       onClick={() => {
                         setIsOpen(false);
-                        setIsGalleryOpen(false);
+                        setIsServicesOpen(false);
                         handleMobileHistory();
                       }}
                       
@@ -272,13 +272,13 @@ const handleClick=()=>{
                   </li>
                   <li>
                     <NavLink
-                      to="/videos"
+                      to="/testing-analysis"
                       className={({ isActive }) =>
                         isActive ? 'text-red-500 font-bold' : 'text-gray-700'
                       }
                       onClick={() => {
                         setIsOpen(false);
-                        setIsGalleryOpen(false);
+                        setIsServicesOpen(false);
                         handleMobileHistory();
                       }}
                       
