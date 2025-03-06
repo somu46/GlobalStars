@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-import { FaMapMarkerAlt, FaPhone, FaClock, FaInstagram, FaFacebook, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
 
 
@@ -126,23 +126,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-amber-100 p-6 rounded-xl">
-              <h3 className="text-xl font-serif text-amber-800 mb-4">Follow Our Journey</h3>
-              <div className="flex space-x-6">
-                <a href="https://instagram.com" className="text-amber-600 hover:text-amber-700">
-                  <FaInstagram className="text-2xl" />
-                </a>
-                <a href="https://facebook.com" className="text-amber-600 hover:text-amber-700">
-                  <FaFacebook className="text-2xl" />
-                </a>
-                <a href="https://x.com" className="text-amber-600 hover:text-amber-700">
-                  <FaTwitter className="text-2xl" />
-                </a>
-                <a href="https://youtube.com" className="text-amber-600 hover:text-amber-700">
-                  <FaYoutube className="text-2xl" />
-                </a>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
