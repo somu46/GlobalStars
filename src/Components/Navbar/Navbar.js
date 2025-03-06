@@ -105,7 +105,7 @@ const handleClick=()=>{
           <li className="nav-item gallery-dropdown flex flex-row ">
             <span>Our Gallery</span>
             <ArrowDropDownIcon/>
-            <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
+            <ul className="gallery_dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
               <li>
                 <NavLink activeClass="active"   to="/videos"
                  onClick={handleHistory}>Video</NavLink>
