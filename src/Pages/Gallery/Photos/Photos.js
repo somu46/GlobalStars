@@ -30,7 +30,8 @@ const Photos = ({ id }) => {
             if(id==="parties"){
                 setPhotoData(Parties);
             }
-        } else {
+        } 
+        else {
             setPhotoData([]);
         }
     }, [id]);

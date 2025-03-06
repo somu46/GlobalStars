@@ -4,12 +4,12 @@ import RB1 from '../../../../Assets/logo.png';
 
 //Shantibon
 
-import SB38 from '../../../../Assets/logo.png';
+import SB38 from '../../../../Assets/1.png';
 
 //SaiArati
-import SA1 from '../../../../Assets/logo.png';
-import RB6 from '../../../../Assets/logo.png';
-import SB15 from '../../../../Assets/logo.png';
+import SA1 from '../../../../Assets/5.png';
+import RB6 from '../../../../Assets/11.png';
+import SB15 from '../../../../Assets/am.png';
 import SB24 from '../../../../Assets/logo.png';
 
 
