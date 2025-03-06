@@ -5,9 +5,11 @@ import { Outlet } from "react-router-dom";
 import LayOut from "../LayOut/defaultLayout";
 
 
+
 const Root = ()=>{
     return (
         <div>
+            
             <Navbar/>
             <LayOut>
             <Outlet/>

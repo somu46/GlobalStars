@@ -1,16 +1,95 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Button = () => {
+const Button = ({ onClick }) => {
   return (
-    <div className="relative inline-flex items-center justify-center gap-4 group">
-      <div className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200" />
-      <a role="button" className="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-600 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30" title="payment" href="https://youtube.com">Make an Appointment<svg aria-hidden="true" viewBox="0 0 10 10" height={10} width={10} fill="none" className="mt-0.5 ml-2 -mr-1 stroke-white stroke-2">
-          <path d="M0 5h7" className="transition opacity-0 group-hover:opacity-100" />
-          <path d="M1 1l4 4-4 4" className="transition group-hover:translate-x-[3px]" />
-        </svg>
-      </a>
-    </div>
+    <StyledWrapper>
+      <button className="appointment-button" onClick={onClick}>
+        <div className="icon-wrapper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="calendar-icon"
+          >
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+        </div>
+        <span>Make an Appointment</span>
+      </button>
+    </StyledWrapper>
   );
-}
+};
+
+const StyledWrapper = styled.div`
+  .appointment-button {
+    --color: #fff;
+    --background: #404660;
+    --background-hover: #3A4059;
+    --icon-bg: #2B3044;
+    --icon-color: #fff;
+    --shadow: rgba(13, 15, 25, 0.2);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--background);
+    color: var(--color);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+
+    &:hover {
+      background: var(--background-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px var(--shadow);
+
+      .icon-wrapper {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px var(--shadow);
+    }
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: var(--icon-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .calendar-icon {
+    width: 20px;
+    height: 20px;
+    stroke: var(--icon-color);
+    transition: stroke 0.3s ease;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+`;
 
 export default Button;
