@@ -9,18 +9,25 @@ const Contact = () => {
   const form = useRef();
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const sendEmail = (data) => {
+  const sendEmail = (e) => {
+    // e.preventDefault();
+    console.log("From.current: ", form.current);
+    
     emailjs.sendForm(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       form.current,
-      process.env.REACT_APP_EMAILJS_USER_ID
+
+      process.env.REACT_APP_EMAILJS_PUBLIC_ID,
+      
     )
     .then(() => {
       toast.success('Message sent successfully!');
       reset();
     })
     .catch((error) => {
+      console.log("Error: ", error);
+      
       toast.error('Failed to send message. Please try again.');
     });
   };
@@ -48,7 +55,8 @@ const Contact = () => {
               <div>
                 <label className="block text-gray-700 mb-2">Full Name *</label>
                 <input
-                  {...register("name", { required: true })}
+                name='fullName'
+                  {...register("fullName", { required: true })}
                   className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                 />
                 {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
@@ -58,6 +66,7 @@ const Contact = () => {
                 <label className="block text-gray-700 mb-2">Email *</label>
                 <input
                   type="email"
+                  name='email'
                   {...register("email", { required: true })}
                   className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                 />
@@ -67,6 +76,7 @@ const Contact = () => {
               <div>
                 <label className="block text-gray-700 mb-2">Subject *</label>
                 <input
+                  name='subject'
                   {...register("subject", { required: true })}
                   className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                 />
@@ -76,6 +86,7 @@ const Contact = () => {
               <div>
                 <label className="block text-gray-700 mb-2">Message *</label>
                 <textarea
+                  name='Message'
                   {...register("message", { required: true })}
                   rows="5"
                   className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
