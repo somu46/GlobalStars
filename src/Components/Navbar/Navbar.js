@@ -53,7 +53,7 @@ const handleClick=()=>{
           <NavLink to="/"
            onClick={handleHistory}>
            
-            <h1>Global Stars</h1>
+            <h1><span className="text-blue-800">GLOBAL</span>STARS</h1>
           </NavLink>
           
         </div>
