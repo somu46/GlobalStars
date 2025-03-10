@@ -40,7 +40,7 @@ const StyledWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px 24px;
+    padding: 10px 15px;
     border: none;
     border-radius: 8px;
     background: var(--background);
@@ -70,8 +70,8 @@ const StyledWrapper = styled.div`
   }
 
   .icon-wrapper {
-    width: 40px;
-    height: 40px;
+    width: 21px;
+    height: 25px;
     border-radius: 6px;
     background: var(--icon-bg);
     display: flex;
@@ -81,7 +81,7 @@ const StyledWrapper = styled.div`
   }
 
   .calendar-icon {
-    width: 20px;
+    width: 15px;
     height: 20px;
     stroke: var(--icon-color);
     transition: stroke 0.3s ease;

@@ -1,40 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './photos.scss';
 import LightGallery from 'lightgallery/react';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-import {Safety_Services,Appliance_Repair_Services,Parties,Renovation_Fabrication,Salon_Spa,Painting_Wall_Makeover} from './Data/AssetsData';
 
-const itemsArray = ['Safety_Services', 'Appliance_Repair_Services', 'Renovation_Fabrication', 'Salon_Spa', 'cultural-events', 'Painting_Wall_Makeover'];
 
-const Photos = ({ id }) => {
-    const [PhotoData, setPhotoData] = useState([]);
+const Photos = ({ PhotoData }) => {
+   
 
-    useEffect(() => {
-        if (itemsArray.includes(id)) {
-            if(id==="Safety_Services"){
-                setPhotoData(Safety_Services);
-            }
-            if(id==="Appliance_Repair_Services"){
-                setPhotoData(Appliance_Repair_Services);
-            }
-            if(id==="Renovation_Fabrication"){
-                setPhotoData(Renovation_Fabrication);
-            }
-            if(id==="Salon_Spa"){
-                setPhotoData(Salon_Spa);
-            }
-            if(id==="Painting_Wall_Makeover"){
-                setPhotoData(Painting_Wall_Makeover);
-            }
-            if(id==="parties"){
-                setPhotoData(Parties);
-            }
-        } 
-        else {
-            setPhotoData([]);
-        }
-    }, [id]);
+    
 
     return (
         <>

@@ -3,7 +3,7 @@ import About from '../Pages/AboutUs/AboutUs'
 import Contact from '../Pages/Contact/Contact'
 import Blog from '../Pages/Blogs/Blogs'
 import Faqs from '../Pages/FAQs/Faqs'
-import Video from '../Pages/Gallery/Videos'
+
 import Photo from '../Pages/Gallery/Photos/Photos'
 import BoroscopeInspection from './BoroscopeInspection/BoroscopeInspection'
 import EnvironmentalP from './EnvironmentalProtect/EnvironmentalP'
@@ -17,8 +17,7 @@ export {
     About ,
     Contact , 
     Blog ,
-    Faqs , 
-    Video ,
+    Faqs ,
     Photo , 
     BoroscopeInspection, 
     EnvironmentalP ,

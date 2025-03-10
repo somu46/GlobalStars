@@ -60,7 +60,7 @@ const handleClick=()=>{
       </div>
 
       {/* Desktop Menu */}
-      <div className="desktop-menu">
+      <div className="desktop-menu ml-[4rem]">
       
         <ul className="navbar-menu">
           <li>
@@ -102,19 +102,11 @@ const handleClick=()=>{
               </li>
             </ul>
           </li>
-          <li className="nav-item gallery-dropdown flex flex-row ">
-            <span>Our Collection</span>
-            <ArrowDropDownIcon/>
-            <ul className="gallery_dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
-              {/* <li>
-                <NavLink activeClass="active"   to="/videos"
-                 onClick={handleHistory}>Video</NavLink>
-              </li>
-              <li>
-                <NavLink activeClass="active"   to="/Photos"
-                 onClick={handleHistory}>Photo</NavLink>
-              </li> */}
-            </ul>
+          <li >
+            
+            <NavLink activeClass="active"  to="/photos"
+             onClick={handleHistory}>Our Collection</NavLink>
+           
           </li>
           
           <li>
@@ -133,7 +125,7 @@ const handleClick=()=>{
         </ul>
         
          
-        <div>
+        <div className=" w-auto">
           <Button title="Make an Appointment" fun={handleClick}/>
           </div> 
        
