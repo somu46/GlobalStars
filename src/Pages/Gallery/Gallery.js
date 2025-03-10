@@ -1,28 +1,30 @@
-import React, { useState } from "react";
-import EventsSection from "./EventsSection";
+import React from "react";
+// import EventsSection from "./EventsSection";
 import Photos from "./Photos/Photos";
+import PhotoData from "./Photos/Data/AssetsData";
+
 // import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 
 const Gallery = () => {
-  const [sectionId, setsectionId] = useState("");
-  const [isopen, setisopen] = useState(true);
-  const handleItem = (id) => {
-    const element = document.getElementById(id);
+  // const [sectionId, setsectionId] = useState("");
+  // const [isopen, setisopen] = useState(true);
+  // const handleItem = (id) => {
+  //   const element = document.getElementById(id);
 
-    setsectionId(id);
+  //   setsectionId(id);
 
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    if (sectionId) {
-      setisopen(!isopen);
-    }
-  };
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  //   if (sectionId) {
+  //     setisopen(!isopen);
+  //   }
+  // };
 
   return (
     <div className="my-[5.1rem]">
       {/* <Breadcrumb pageName="Photo Gallery" /> */}
-      <header className="text-center py-8 bg-gray-100 text-gray-800">
+      {/* <header className="text-center py-8 bg-gray-100 text-gray-800">
         <h1 className="text-4xl font-bold mb-4">
           
         </h1>
@@ -48,10 +50,10 @@ const Gallery = () => {
                 BACK TO GALLERY
               </button>
             </header>
-            <Photos id={sectionId} />
           </div>
         </section>
-      )}
+      )} */}
+      <Photos PhotoData={PhotoData} />
     </div>
   );
 };
