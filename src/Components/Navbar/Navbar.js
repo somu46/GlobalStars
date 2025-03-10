@@ -103,17 +103,17 @@ const handleClick=()=>{
             </ul>
           </li>
           <li className="nav-item gallery-dropdown flex flex-row ">
-            <span>Our Gallery</span>
+            <span>Our Collection</span>
             <ArrowDropDownIcon/>
             <ul className="gallery_dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
-              <li>
+              {/* <li>
                 <NavLink activeClass="active"   to="/videos"
                  onClick={handleHistory}>Video</NavLink>
               </li>
               <li>
                 <NavLink activeClass="active"   to="/Photos"
                  onClick={handleHistory}>Photo</NavLink>
-              </li>
+              </li> */}
             </ul>
           </li>
           
