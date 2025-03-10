@@ -32,7 +32,7 @@ const Footer = () => {
     <footer className="bg-slate-800 text-white py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid layout for mobile and larger screens */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About Us Section */}
           <div className="col-span-2 sm:col-span-1">
             <img src={logo} alt="Islamic Knowledge" className="w-12 h-12 mx-auto my-2" />
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div>
+          <div className="col-span-2 sm:col-span-1">
             <h4 className="text-lg font-semibold mb-4 text-center">Quick Links</h4>
             <ul className="space-y-2 text-center">
               <li onClick={handleScrolle}>
@@ -61,7 +61,7 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              <li onClick={handleScrolle}>
+              {/* <li onClick={handleScrolle}>
                 <Link to="/privacy-policy" className="text-sm text-gray-300 hover:text-amber-400 transition">
                   Privacy Policy
                 </Link>
@@ -70,51 +70,10 @@ const Footer = () => {
                 <Link to="/terms-and-conditions" className="text-sm text-gray-300 hover:text-amber-400 transition">
                   Terms & Conditions
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
-          {/* Quick Features Section */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-center">Quick Services</h4>
-            {/* <ul className="space-y-2 text-center">
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/prayer-times" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Prayer Times
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/islamic-calendar" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Islamic Calendar
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/zakat-calculator" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Zakat Calculator
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/al-quran" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Al-Quran
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/date-converter" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Date Converter
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/islamic-holidays" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Islamic Holidays
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/essentials/qibla-direction" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Qibla Direction
-                </Link>
-              </li>
-            </ul> */}
-          </div>
 
           {/* Contact Section */}
           <div className="col-span-2 sm:col-span-1">
@@ -123,7 +82,7 @@ const Footer = () => {
 
             {/* Social Media Links */}
             <div className="flex space-x-4 mt-4 mx-auto justify-center">
-            <a href="mailto:globalstars@gmail.com" className="hover:text-amber-400 text-[1rem]">
+            <a href="mailto:globalstarglobalstar90@gmail.com" className="hover:text-amber-400 text-[1rem]">
               <FaEnvelope className="h-6 w-6" />
               </a>
               <a
