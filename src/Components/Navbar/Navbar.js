@@ -23,7 +23,7 @@ const variants = {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
  const navigate=useNavigate();
 
