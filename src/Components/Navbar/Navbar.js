@@ -293,52 +293,14 @@ const handleClick=()=>{
                 Blogs
               </NavLink>
             </li>
-            <li>
-              <button
-                className="focus:outline-none mb-2"
-                onClick={() => setIsGalleryOpen(!isGalleryOpen)}
-              >
-                Our Gallery
-                <ArrowDropDownIcon />
-              </button>
-              {isGalleryOpen && (
-                <ul className="pl-4 space-y-2">
-                  <li>
-                    <NavLink
-                      to="/photos"
-                      className={({ isActive }) =>
-                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
-                      }
-                      onClick={() => {
-                        setIsOpen(false);
-                        setIsGalleryOpen(false);
-                        handleMobileHistory();
-                      }}
-                       
-                    >
-                      Photos
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/videos"
-                      className={({ isActive }) =>
-                        isActive ? 'text-red-500 font-bold' : 'text-gray-700'
-                      }
-                      onClick={() => {
-                        setIsOpen(false);
-                        setIsGalleryOpen(false);
-                        handleMobileHistory();
-                      }}
-                      
-                    >
-                      Videos
-                    </NavLink>
-                  </li>
-                 
-                </ul>
-              )}
-            </li>
+            
+            <li >
+            
+            <NavLink activeClass="active"  to="/photos"
+             onClick={handleHistory}>Our Collection</NavLink>
+           
+          </li>
+           
             <li>
               <NavLink
                 to="/faqs"
