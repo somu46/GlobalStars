@@ -21,7 +21,7 @@ const Home = () => {
             Curators of history's most exquisite treasures since 1952
           </p>
           <Link 
-            to="/collection" 
+            to="/our-collections" 
             className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center transition-colors"
           >
             Explore Collection <FaChevronRight className="ml-2" />
