@@ -1,7 +1,10 @@
 import React from 'react';
-import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast } from 'react-icons/fa';
+import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast, FaQuoteLeft, FaCalendarAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Cover from '../../Assets/CoverPhoto.jpeg';
+import Artifact1 from '../../Assets/11.png';
+import Artifact2 from '../../Assets/11.png';
+import Artifact3 from '../../Assets/11.png';
 
 const Home = () => {
   return (
@@ -26,32 +29,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Featured Categories */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">Explore Eras</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {['Victorian', 'Art Deco', 'Ming Dynasty'].map((era, index) => (
-            <div 
-              key={index}
-              className="relative h-96 rounded-xl overflow-hidden group cursor-pointer"
-            >
-              <div className="absolute inset-0 bg-black opacity-40 transition-opacity group-hover:opacity-20"></div>
-              <img 
-                src={`https://source.unsplash.com/random/800x600?${era}`}
-                alt={era}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-2xl font-serif mb-2">{era}</h3>
-                <button className="flex items-center text-amber-300 hover:text-amber-100">
-                  View Collection <FaChevronRight className="ml-2" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Why Choose Us */}
       <div className="bg-amber-100 py-16">
         <div className="max-w-7xl mx-auto px-4">
@@ -73,28 +50,70 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Featured Collection */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">Current Highlights</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[1,2,3,4].map((item) => (
-            <div key={item} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-              <img 
-                src={`https://source.unsplash.com/random/600x800?antique${item}`}
-                alt="Antique item"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="font-serif text-lg text-amber-800 mb-2">19th Century French Ormolu Clock</h3>
-                <div className="flex justify-between items-center">
-                  <span className="text-amber-600 font-semibold">$24,500</span>
-                  <button className="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg hover:bg-amber-200 transition-colors">
-                    View Details
-                  </button>
+      {/* Featured Artifacts Section */}
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">Featured Artifacts</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {image: Artifact1, title: "Ancient Relic", description: "A rare artifact from the Bronze Age"},
+              {image: Artifact2, title: "Medieval Manuscript", description: "A beautifully preserved manuscript from the 12th century"},
+              {image: Artifact3, title: "Renaissance Sculpture", description: "An exquisite marble sculpture from the Renaissance period"},
+            ].map((artifact, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <img src={artifact.image} alt={artifact.title} className="w-full h-64 object-cover"/>
+                <div className="p-6">
+                  <h3 className="text-xl font-serif text-amber-800 mb-2">{artifact.title}</h3>
+                  <p className="text-gray-700">{artifact.description}</p>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="bg-amber-100 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">What Our Collectors Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {quote: "The authenticity and quality of the artifacts are unparalleled. A truly trustworthy source.", author: "John Doe"},
+              {quote: "The team's expertise and attention to detail are remarkable. Highly recommended!", author: "Jane Smith"},
+              {quote: "An exceptional experience from start to finish. The provenance research is impeccable.", author: "Michael Brown"},
+            ].map((testimonial, index) => (
+              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <FaQuoteLeft className="text-4xl text-amber-600 mb-4"/>
+                <p className="text-gray-700 italic mb-4">"{testimonial.quote}"</p>
+                <p className="text-amber-800 font-semibold">- {testimonial.author}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Upcoming Events Section */}
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">Upcoming Events</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {date: "2023-10-15", title: "Ancient Civilizations Exhibition", description: "Explore artifacts from ancient Egypt, Greece, and Rome"},
+              {date: "2023-11-05", title: "Medieval Manuscripts Workshop", description: "Learn about the art of manuscript preservation"},
+              {date: "2023-12-01", title: "Renaissance Art Symposium", description: "A deep dive into the art and culture of the Renaissance"},
+            ].map((event, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <FaCalendarAlt className="text-2xl text-amber-600 mr-2"/>
+                    <p className="text-gray-700">{event.date}</p>
+                  </div>
+                  <h3 className="text-xl font-serif text-amber-800 mb-2">{event.title}</h3>
+                  <p className="text-gray-700">{event.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
