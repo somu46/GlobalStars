@@ -23,7 +23,7 @@ const variants = {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  // const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
  const navigate=useNavigate();
 
@@ -104,8 +104,8 @@ const handleClick=()=>{
           </li>
           <li >
             
-            <NavLink activeClass="active"  to="/photos"
-             onClick={handleHistory}>Our Collection</NavLink>
+            <NavLink activeClass="active"  to="/our-collections"
+             onClick={handleHistory}>Our Collections</NavLink>
            
           </li>
           
@@ -296,8 +296,8 @@ const handleClick=()=>{
             
             <li >
             
-            <NavLink activeClass="active"  to="/photos"
-             onClick={handleHistory}>Our Collection</NavLink>
+            <NavLink activeClass="active"  to="/our-collections"
+             onClick={handleMobileHistory}>Our Collections</NavLink>
            
           </li>
            
