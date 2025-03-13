@@ -4,12 +4,8 @@ import LightGallery from 'lightgallery/react';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-
 const Photos = ({ PhotoData }) => {
    
-
-    
-
     return (
         <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 p-4 w-[90%] mx-auto border">

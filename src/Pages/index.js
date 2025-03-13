@@ -12,6 +12,8 @@ import LitigationSupport from './LitigationSupport/LitigationSupport'
 import RadiationSafety from './RadiationSafety/RadiationSafety'
 import TestAnal from './TestingAnalysis/TestAnal'
 
+import Error from './Error/Error'
+
 export {
     Home , 
     About ,
@@ -24,5 +26,6 @@ export {
     LandRem ,
     LitigationSupport ,
     RadiationSafety ,
-    TestAnal
+    TestAnal ,
+    Error
  };
