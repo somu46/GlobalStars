@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Components/Root/root';
-import { About, Blog, Contact, Faqs, LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem } from './Pages';
+import { About, Blog, Contact, Faqs, LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem ,Error } from './Pages';
 import { Toaster } from 'react-hot-toast';
 import Gallery from './Pages/Gallery/Gallery';
  
@@ -67,7 +67,7 @@ const router = createBrowserRouter([
       },
       {
         path:"*",
-        element: <h1>404 Not Found</h1>
+        element: <Error/>
       }
     ]
   },
