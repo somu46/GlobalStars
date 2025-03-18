@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({ onClick }) => {
+const Button = ({title, onClick }) => {
   return (
     <StyledWrapper>
       <button className="appointment-button" onClick={onClick}>
@@ -22,7 +22,7 @@ const Button = ({ onClick }) => {
             <line x1="3" y1="10" x2="21" y2="10" />
           </svg>
         </div>
-        <span>Make an Appointment</span>
+        <span>{title}</span>
       </button>
     </StyledWrapper>
   );

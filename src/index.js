@@ -7,6 +7,7 @@ import Root from './Components/Root/root';
 import { About, Blog, Contact, Faqs, LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem ,Error } from './Pages';
 import { Toaster } from 'react-hot-toast';
 import Gallery from './Pages/Gallery/Gallery';
+import Appointment from './Pages/Appointment/Appointment';
  
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: 'our-collections',
         element : <Gallery/>
+      },
+      {
+        path: 'an-appointment',
+        element : <Appointment/>
       },
       {
         path: 'land-remediation',
