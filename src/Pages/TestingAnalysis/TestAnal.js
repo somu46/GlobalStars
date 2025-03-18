@@ -1,9 +1,10 @@
 import React from 'react'
+import CoverImg from '../../Assets/TestAnal.jpeg'
 
 const TestAnal = () => {
   return (
     <div className="bg-gray-50 py-12">
-      <div className="max-w-4xl mx-auto px-4 space-y-8">
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <h1 className="text-4xl font-bold text-blue-600 text-center mb-8">
           Testing and Analysis
         </h1>

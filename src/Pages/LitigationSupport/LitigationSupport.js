@@ -1,10 +1,11 @@
 import React from 'react'
+import CoverImg from '../../Assets/LitigationSup.jpeg'
 
 const LitigationSupport = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-indigo-800 to-blue-600 text-white py-24 px-4">
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Expert Litigation Support Services</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

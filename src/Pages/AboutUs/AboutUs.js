@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaHistory, FaCertificate, FaSearch, FaBrush, FaBookOpen } from 'react-icons/fa';
+import CoverImg from '../../Assets/AboutUs.jpeg'
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
-      <div className="relative h-96 bg-[url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center">
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-5xl font-serif mb-4">Timeless Treasures</h1>

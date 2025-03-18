@@ -1,10 +1,11 @@
 import React from 'react'
+import CoverImg from '../../Assets/RadiationSafety.jpeg'
 
 const RadiationSafety = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-800 to-cyan-600 text-white py-20 px-4">
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Radiation Safety Solutions</h1>
           <p className="text-xl mb-8">Protecting People and Environment Through Advanced Radiation Safety Measures</p>
