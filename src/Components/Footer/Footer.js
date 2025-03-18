@@ -61,16 +61,7 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              {/* <li onClick={handleScrolle}>
-                <Link to="/privacy-policy" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li onClick={handleScrolle}>
-                <Link to="/terms-and-conditions" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Terms & Conditions
-                </Link>
-              </li> */}
+              
             </ul>
           </div>
 

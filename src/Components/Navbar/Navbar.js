@@ -126,7 +126,11 @@ const handleClick=()=>{
         
          
         <div className=" w-auto">
+        <NavLink
+              to='/an-appointment'
+              >
           <Button title="Make an Appointment" fun={handleClick}/>
+          </NavLink>
           </div> 
        
       </div>
@@ -326,11 +330,14 @@ const handleClick=()=>{
               </NavLink>
             </li>
             <li>
-              
+              <NavLink
+              to='/an-appointment'
+              >
             <Button  
             title="Make An Appointment"
             fun={handleClick}
             />
+            </NavLink>
             </li>
           </ul>
         </nav>
