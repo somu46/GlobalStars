@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
-
+import CoverImg from '../../Assets/ContactUs.jpeg'
 
 const Contact = () => {
   const form = useRef();
@@ -37,7 +37,7 @@ const Contact = () => {
       <Toaster position="top-center" reverseOrder={false} />
       
       {/* Hero Section */}
-      <div className="relative h-64 bg-[url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center">
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-4xl font-serif mb-4">Contact Our Curators</h1>
