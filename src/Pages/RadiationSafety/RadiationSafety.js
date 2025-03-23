@@ -1,5 +1,6 @@
 import React from 'react'
 import CoverImg from '../../Assets/RadiationSafety.jpeg'
+import { Link } from 'react-router-dom'
 
 const RadiationSafety = () => {
   return (
@@ -96,9 +97,11 @@ const RadiationSafety = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Start Your Safety Journey Today</h2>
           <p className="text-gray-300 mb-8">Contact our experts for a comprehensive radiation safety assessment</p>
+          <Link to='/an-appointment'>
           <button className="bg-cyan-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 transition-colors">
             Schedule Consultation
           </button>
+          </Link>
         </div>
       </div>
     </div>

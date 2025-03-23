@@ -32,7 +32,7 @@ const Footer = () => {
     <footer className="bg-slate-800 text-white py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid layout for mobile and larger screens */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Us Section */}
           <div className="col-span-2 sm:col-span-1">
             <img src={logo} alt="Global Stars" className="w-32 h-20 mx-auto my-2" />
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div className="col-span-2 sm:col-span-1">
+          <div>
             <h4 className="text-lg font-semibold mb-4 text-center">Quick Links</h4>
             <ul className="space-y-2 text-center">
               <li onClick={handleScrolle}>
@@ -57,25 +57,78 @@ const Footer = () => {
                 </Link>
               </li>
               <li onClick={handleScrolle}>
+                <Link to="/our-collections" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Our Collections
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/blogs" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Blogs
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/faqs" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Faqs
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
                 <Link to="/contact-us" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Contact Us
+                Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Quick Features Section */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-center">Quick Services</h4>
+            <ul className="space-y-2 text-center">
+              <li onClick={handleScrolle}>
+                <Link to="/land-remediation" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                Land Remediation
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/radiation-safety-protection" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Radiation Safety and Protection
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/litigation-support" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Litigation Support
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/environmental-protection" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Environmental Protection
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/boroscope-inspection" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Boroscope Inspection
+                </Link>
+              </li>
+              <li onClick={handleScrolle}>
+                <Link to="/testing-analysis" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                  Testing And Analysis
                 </Link>
               </li>
               
             </ul>
           </div>
 
-
           {/* Contact Section */}
           <div className="col-span-2 sm:col-span-1">
             <h4 className="text-lg font-semibold mb-4 text-center">Contact Us</h4>
-            
+            <p className="text-sm text-gray-300 flex items-center gap-2 justify-center">
+              <FaEnvelope className="h-6 w-6" />
+              <a href="mailto:contact@islamicknowledge.com" className="hover:text-amber-400 text-[1rem]">
+                contact@islamicalendar.com
+              </a>
+            </p>
 
             {/* Social Media Links */}
             <div className="flex space-x-4 mt-4 mx-auto justify-center">
-            <a href="mailto:globalstarglobalstar90@gmail.com" className="hover:text-amber-400 text-[1rem]">
-              <FaEnvelope className="h-6 w-6" />
-              </a>
               <a
                 href="https://facebook.com"
                 className="text-gray-300 hover:text-amber-400 transition"
@@ -132,7 +185,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="mt-10 border-t border-gray-700 pt-6 text-center">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Global Stars. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Islamic Knowledge. All Rights Reserved.
           </p>
         </div>
       </div>

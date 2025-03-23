@@ -54,10 +54,7 @@ const router = createBrowserRouter([
         path: 'litigation-support',
         element: <LitigationSupport/>
       },
-      {
-        path: 'radiation-safety-protection',
-        element: <RadiationSafety/>
-      },
+      
       {
         path: 'environmental-protection',
         element: <EnvironmentalP/>
