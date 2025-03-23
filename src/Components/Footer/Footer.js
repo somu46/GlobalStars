@@ -185,7 +185,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="mt-10 border-t border-gray-700 pt-6 text-center">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Islamic Knowledge. All Rights Reserved.
+            &copy; {new Date().getFullYear()} - {new Date().getFullYear() + 1 } Global Stars. All Rights Reserved.
           </p>
         </div>
       </div>
