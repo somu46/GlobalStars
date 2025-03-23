@@ -1,5 +1,6 @@
 import React from 'react'
 import CoverImg from '../../Assets/LandRem.jpeg'
+import { Link } from 'react-router-dom'
 
 const LandRem = () => {
   return (
@@ -131,9 +132,11 @@ const LandRem = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Reclaim Your Land Today</h2>
           <p className="text-gray-300 mb-8 text-lg">Contact our environmental specialists for sustainable remediation solutions</p>
+          <Link to='/an-appointment'>
           <button className="bg-white text-emerald-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
             Start Land Recovery
           </button>
+          </Link>
         </div>
       </div>
     </div>

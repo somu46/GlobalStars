@@ -1,5 +1,6 @@
 import React from 'react'
 import CoverImg from '../../Assets/ABI.jpeg'
+import { Link } from 'react-router-dom'
 
 const BoroscopeInspection = () => {
   return (
@@ -139,9 +140,12 @@ const BoroscopeInspection = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Precision Inspection Solutions</h2>
           <p className="text-gray-300 mb-8 text-lg">Contact our certified inspectors for non-destructive testing needs</p>
+          <Link to='/an-appointment' >
           <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
             Request Inspection
           </button>
+          </Link>
+          
         </div>
       </div>
     </div>

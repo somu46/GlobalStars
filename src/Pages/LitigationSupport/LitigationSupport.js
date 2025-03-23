@@ -1,5 +1,6 @@
 import React from 'react'
 import CoverImg from '../../Assets/LitigationSup.jpeg'
+import { Link } from 'react-router-dom'
 
 const LitigationSupport = () => {
   return (
@@ -123,9 +124,11 @@ const LitigationSupport = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Strengthen Your Legal Position</h2>
           <p className="text-gray-300 mb-8 text-lg">Contact us for a confidential case evaluation</p>
+          <Link to='/an-appointment'>
           <button className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
             Request Case Review
           </button>
+          </Link>
         </div>
       </div>
     </div>

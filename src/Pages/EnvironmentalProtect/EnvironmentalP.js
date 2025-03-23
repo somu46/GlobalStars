@@ -1,5 +1,6 @@
 import React from 'react'
 import CoverImg from '../../Assets/EVP.jpeg'
+import { Link } from 'react-router-dom'
 
 const EnvironmentalP = () => {
   return (
@@ -123,9 +124,11 @@ const EnvironmentalP = () => {
           <h2 className="text-3xl font-bold mb-6">Protect Our Planet Together</h2>
           <p className="text-gray-300 mb-8 text-lg">Join our mission for sustainable environmental stewardship</p>
           <div className="flex justify-center gap-4">
+            <Link to='/an-appointment'>
             <button className="bg-white text-emerald-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
               Contact Experts
             </button>
+            </Link>
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-900 transition-all">
               Learn More
             </button>
