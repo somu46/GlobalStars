@@ -133,7 +133,9 @@ const LandRem = () => {
           <h2 className="text-3xl font-bold mb-6">Reclaim Your Land Today</h2>
           <p className="text-gray-300 mb-8 text-lg">Contact our environmental specialists for sustainable remediation solutions</p>
           <Link to='/an-appointment'>
-          <button className="bg-white text-emerald-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+          <button
+          onClick={()=>window.scrollTo(0,0)}
+          className="bg-white text-emerald-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
             Start Land Recovery
           </button>
           </Link>
