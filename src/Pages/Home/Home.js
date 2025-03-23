@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast, FaQuoteLeft, FaCalendarAlt } from 'react-icons/fa';
+import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast, FaQuoteLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Cover from '../../Assets/CoverPhoto.jpeg';
 import Artifact1 from '../../Assets/11.png';

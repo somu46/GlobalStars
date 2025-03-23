@@ -7,7 +7,6 @@ import Logo from '../../Assets/logo.png';
 import { motion} from 'framer-motion';
 import Button from "../UiCom/Button";
 
-
 const variants = {
   open: {
     x: 0,
@@ -25,10 +24,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   // const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
- const navigate=useNavigate();
+  const navigate=useNavigate();
+  
+  
 
- const handleHistory=()=>{
-  window.scrollTo(0, 0);
+  const handleHistory=()=>{
+    window.scrollTo({top:0,behavior:'smooth'})
 }
 
 const handleMobileHistory=()=>{
@@ -127,6 +128,7 @@ const handleClick=()=>{
          
         <div className=" w-auto">
         <NavLink
+        onClick={handleHistory}
               to='/an-appointment'
               >
           <Button title="Make an Appointment" fun={handleClick}/>
