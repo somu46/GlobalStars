@@ -120,15 +120,17 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="col-span-2 sm:col-span-1">
             <h4 className="text-lg font-semibold mb-4 text-center">Contact Us</h4>
-            <p className="text-sm text-gray-300 flex items-center gap-2 justify-center">
-              <FaEnvelope className="h-6 w-6" />
-              <a href="mailto:contact@islamicknowledge.com" className="hover:text-amber-400 text-[1rem]">
-                contact@islamicalendar.com
-              </a>
-            </p>
+            
 
             {/* Social Media Links */}
             <div className="flex space-x-4 mt-4 mx-auto justify-center">
+              <a
+                href="mailto:globalstarglobalstar90@gmail.com"
+                className="text-gray-300 hover:text-amber-400 transition"
+                aria-label="Mail"
+              >
+                <FaEnvelope className="h-6 w-6" />
+              </a>
               <a
                 href="https://facebook.com"
                 className="text-gray-300 hover:text-amber-400 transition"
