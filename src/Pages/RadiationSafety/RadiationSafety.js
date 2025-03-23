@@ -93,7 +93,7 @@ const RadiationSafety = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-800 text-white py-16">
+      <div className="bg-gray-700 text-white py-16">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Start Your Safety Journey Today</h2>
           <p className="text-gray-300 mb-8">Contact our experts for a comprehensive radiation safety assessment</p>
