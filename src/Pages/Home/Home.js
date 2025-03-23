@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast, FaQuoteLeft, FaCalendarAlt } from 'react-icons/fa';
+import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast, FaQuoteLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Cover from '../../Assets/CoverPhoto.jpeg';
 import Artifact1 from '../../Assets/11.png';
@@ -93,49 +93,10 @@ const Home = () => {
       </div>
 
       {/* Upcoming Events Section */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-serif text-amber-800 text-center mb-12">Upcoming Events</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {date: "2023-10-15", title: "Ancient Civilizations Exhibition", description: "Explore artifacts from ancient Egypt, Greece, and Rome"},
-              {date: "2023-11-05", title: "Medieval Manuscripts Workshop", description: "Learn about the art of manuscript preservation"},
-              {date: "2023-12-01", title: "Renaissance Art Symposium", description: "A deep dive into the art and culture of the Renaissance"},
-            ].map((event, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div className="p-6">
-                  <div className="flex items-center mb-4">
-                    <FaCalendarAlt className="text-2xl text-amber-600 mr-2"/>
-                    <p className="text-gray-700">{event.date}</p>
-                  </div>
-                  <h3 className="text-xl font-serif text-amber-800 mb-2">{event.title}</h3>
-                  <p className="text-gray-700">{event.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+     
 
       {/* CTA Section */}
-      <div className="bg-amber-800 text-white py-16">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-serif mb-6">Join Our Collector's Circle</h2>
-          <p className="text-amber-100 mb-8 max-w-xl mx-auto">
-            Receive exclusive updates on new acquisitions, private viewings, and expert insights
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="px-6 py-3 rounded-lg text-gray-800 focus:ring-2 focus:ring-amber-500"
-            />
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 };
