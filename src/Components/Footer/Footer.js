@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About Us Section */}
           <div className="col-span-2 sm:col-span-1">
-            <img src={logo} alt="Islamic Knowledge" className="w-32 h-20 mx-auto my-2" />
+            <img src={logo} alt="Global Stars" className="w-32 h-20 mx-auto my-2" />
             <h4 className="text-lg text-center font-semibold mb-4">Global Stars</h4>
             <p className="text-sm text-gray-300 text-center">
             Global Stars specializes in purchasing antique treasures, offering expert evaluations and fair pricing. With a passion for preserving history, we connect sellers with a trusted buyer dedicated to quality, authenticity, and exceptional customer service.
