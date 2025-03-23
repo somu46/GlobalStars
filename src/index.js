@@ -70,12 +70,13 @@ const router = createBrowserRouter([
         path: 'testing-analysis',
         element: <TestAnal/>
       },
-      {
-        path:"*",
-        element: <Error/>
-      }
+    
     ]
   },
+  {
+    path:"*",
+    element: <Error/>
+  }
  
 ]);
  

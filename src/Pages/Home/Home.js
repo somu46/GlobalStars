@@ -118,24 +118,7 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-amber-800 text-white py-16">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-serif mb-6">Join Our Collector's Circle</h2>
-          <p className="text-amber-100 mb-8 max-w-xl mx-auto">
-            Receive exclusive updates on new acquisitions, private viewings, and expert insights
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="px-6 py-3 rounded-lg text-gray-800 focus:ring-2 focus:ring-amber-500"
-            />
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 };

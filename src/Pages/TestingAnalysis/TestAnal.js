@@ -3,8 +3,8 @@ import CoverImg from '../../Assets/TestAnal.jpeg'
 
 const TestAnal = () => {
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
+    <div className="bg-gray-50 py-1">
+      <div className="relative h-auto bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <h1 className="text-4xl font-bold text-blue-600 text-center mb-8">
           Testing and Analysis
         </h1>
