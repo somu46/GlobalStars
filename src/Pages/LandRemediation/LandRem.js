@@ -3,6 +3,11 @@ import CoverImg from '../../Assets/LandRem.jpeg'
 import { Link } from 'react-router-dom'
 
 const LandRem = () => {
+
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
+  };
+  
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -12,9 +17,10 @@ const LandRem = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Restoring ecosystems and transforming contaminated land into safe, usable spaces through advanced remediation technologies
           </p>
-          <button className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+          <Link to='/an-appointment'>
+          <button onClick={handleScrolle} className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
             Request Site Assessment
-          </button>
+          </button></Link>
           <div className="mt-12">
             <img 
               src="https://cdn-icons-png.flaticon.com/512/3079/3079155.png" 

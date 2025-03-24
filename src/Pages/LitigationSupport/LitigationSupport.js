@@ -3,6 +3,11 @@ import CoverImg from '../../Assets/LitigationSup.jpeg'
 import { Link } from 'react-router-dom'
 
 const LitigationSupport = () => {
+
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
+  };
+  
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -12,9 +17,10 @@ const LitigationSupport = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Comprehensive legal consulting and technical expertise for complex litigation matters
           </p>
-          <button className="bg-white text-indigo-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+          <Link to='/an-appointment'>
+          <button onClick={handleScrolle} className="bg-white text-indigo-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
             Schedule Consultation
-          </button>
+          </button></Link>
         </div>
       </div>
 

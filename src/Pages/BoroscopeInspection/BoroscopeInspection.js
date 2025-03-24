@@ -3,6 +3,11 @@ import CoverImg from '../../Assets/ABI.jpeg'
 import { Link } from 'react-router-dom'
 
 const BoroscopeInspection = () => {
+
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -12,9 +17,10 @@ const BoroscopeInspection = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Precision internal inspection solutions for complex machinery and confined spaces
           </p>
-          <button className="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+          <Link to='/an-appointment'>
+          <button onClick={handleScrolle} className="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
             Schedule Inspection
-          </button>
+          </button></Link>
           <div className="mt-12">
             <img 
               src="https://cdn-icons-png.flaticon.com/512/1993/1993464.png" 

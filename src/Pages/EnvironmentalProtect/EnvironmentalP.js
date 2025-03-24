@@ -3,6 +3,11 @@ import CoverImg from '../../Assets/EVP.jpeg'
 import { Link } from 'react-router-dom'
 
 const EnvironmentalP = () => {
+
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -12,9 +17,10 @@ const EnvironmentalP = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Preserving ecosystems through sustainable solutions and advanced environmental management
           </p>
-          <button className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+          <Link to='/an-appointment'>
+          <button onClick={handleScrolle} className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
             Start Conservation Plan
-          </button>
+          </button></Link>
         </div>
       </div>
 
