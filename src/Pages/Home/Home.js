@@ -1,5 +1,20 @@
 import React from 'react';
-import { FaChevronRight, FaCertificate, FaBrush, FaHistory, FaShippingFast, FaQuoteLeft, FaUserGraduate, FaMicroscope, FaBook } from 'react-icons/fa';
+import { 
+  FaChevronRight, 
+  FaShieldAlt, 
+  FaBalanceScale, 
+  FaLeaf, 
+  FaSearch, 
+  FaFlask,
+  FaUserTie,
+  FaMicroscope,
+  FaFileAlt,
+  FaQuoteLeft,
+  FaMapMarkedAlt,
+  FaWater,
+  FaChartLine,
+  FaIndustry
+} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Cover from '../../Assets/CoverPhoto.jpeg';
@@ -8,6 +23,10 @@ const Home = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
   };
 
   const staggerContainer = {
@@ -33,7 +52,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Timeless Artifacts, Eternal Legacy
+            Environmental Excellence, Sustainable Solutions
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 italic"
@@ -41,7 +60,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Curators of history's most exquisite treasures since 1952
+            Pioneering environmental consulting since 1995
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +71,7 @@ const Home = () => {
               to="/our-collections" 
               className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center transition-colors"
             >
-              Explore Collection <FaChevronRight className="ml-2" />
+              Explore Collections <FaChevronRight className="ml-2" />
             </Link>
           </motion.div>
         </div>
@@ -71,14 +90,14 @@ const Home = () => {
             className="text-3xl font-serif text-amber-800 text-center mb-12"
             variants={fadeInUp}
           >
-            Why Collectors Trust Us
+            Why Clients Trust Us
           </motion.h2>
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              {icon: <FaCertificate />, title: "Expert Authentication", text: "Multi-stage verification process with leading historians"},
-              {icon: <FaBrush />, title: "Museum Conservation", text: "Traditional restoration techniques by master craftsmen"},
-              {icon: <FaHistory />, title: "Provenance Research", text: "Comprehensive historical documentation for every artifact"},
-              {icon: <FaShippingFast/>, title : "Secure Shipping", text: "Climate-controlled transportation with real-time tracking"},
+              {icon: <FaShieldAlt />, title: "Regulatory Compliance", text: "Ensuring full adherence to environmental regulations"},
+              {icon: <FaChartLine />, title: "Data-Driven Solutions", text: "Advanced analytics for measurable results"},
+              {icon: <FaIndustry />, title: "Industry Expertise", text: "Specialized knowledge across multiple sectors"},
+              {icon: <FaMapMarkedAlt />, title: "Site Assessment", text: "Comprehensive environmental site evaluations"},
             ].map((feature, index) => (
               <motion.div 
                 key={index} 
@@ -118,10 +137,10 @@ const Home = () => {
               variants={fadeInUp}
             >
               <p className="mb-4">
-                Founded in 1952, we have been dedicated to preserving and showcasing the world's most exquisite historical artifacts. Our mission is to bridge the past and present by bringing timeless treasures to collectors and enthusiasts worldwide.
+                Founded in 1995, we have been at the forefront of environmental consulting, providing innovative solutions to complex environmental challenges. Our mission is to bridge the gap between industrial progress and environmental sustainability.
               </p>
               <p className="mb-4">
-                With a team of expert historians, conservators, and researchers, we ensure that every artifact in our collection is authenticated, preserved, and documented to the highest standards.
+                With a team of expert environmental scientists, engineers, and legal specialists, we ensure that every project meets the highest standards of environmental compliance and sustainability.
               </p>
               <Link 
                 to="/about-us" 
@@ -136,10 +155,103 @@ const Home = () => {
             >
               <img 
                 src={Cover} 
-                alt="Our Story" 
+                alt="Our Team in the Field" 
                 className="w-full h-full object-cover"
               />
             </motion.div>
+          </motion.div>
+        </div>
+      </div>
+      
+      {/* Services Section */}
+      <div className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.h2 
+            className="text-3xl font-serif text-amber-800 text-center mb-4"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeInUp}
+            viewport={{ once: true }}
+          >
+            Our Specialized Services
+          </motion.h2>
+          <motion.p
+            className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeInUp}
+            viewport={{ once: true }}
+          >
+            Comprehensive environmental and technical solutions
+          </motion.p>
+
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            initial="hidden"
+            whileInView="visible"
+            variants={staggerContainer}
+            viewport={{ once: true }}
+          >
+            {[
+              {
+                title: "Land Remediation",
+                description: "Soil and groundwater contamination assessment and cleanup",
+                icon: <FaLeaf className="text-3xl text-amber-600" />,
+                link: "/land-remediation"
+              },
+              {
+                title: "Radiation Safety",
+                description: "Radiation protection services and safety consulting",
+                icon: <FaShieldAlt className="text-3xl text-amber-600" />,
+                link: "/radiation-safety-protection"
+              },
+              {
+                title: "Litigation Support",
+                description: "Expert witness services and technical documentation",
+                icon: <FaBalanceScale className="text-3xl text-amber-600" />,
+                link: "/litigation-support"
+              },
+              {
+                title: "Environmental Protection",
+                description: "Watershed management and water quality assessment",
+                icon: <FaWater className="text-3xl text-amber-600" />,
+                link: "/environmental-protection"
+              },
+              {
+                title: "Boroscope Inspection",
+                description: "Advanced visual inspection of facilities and equipment",
+                icon: <FaSearch className="text-3xl text-amber-600" />,
+                link: "/boroscope-inspection"
+              },
+              {
+                title: "Testing And Analysis",
+                description: "Comprehensive environmental testing services",
+                icon: <FaFlask className="text-3xl text-amber-600" />,
+                link: "/testing-analysis"
+              }
+            ].map((service, index) => (
+              <motion.div 
+                key={index}
+                className="bg-amber-50 rounded-xl p-6 hover:shadow-lg transition-all border border-amber-100"
+                variants={fadeInUp}
+                whileHover={{ y: -5 }}
+              >
+                <Link to={service.link} className="block" onClick={handleScrolle}>
+                  <div className="flex items-start mb-4">
+                    <div className="bg-amber-100 p-3 rounded-lg mr-4">
+                      {service.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-serif text-amber-800">{service.title}</h3>
+                      <p className="text-gray-600">{service.description}</p>
+                    </div>
+                  </div>
+                  <div className="text-amber-600 hover:text-amber-700 font-medium flex items-center mt-4">
+                    Learn more <FaChevronRight className="ml-1 text-sm" />
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </div>
@@ -164,9 +276,9 @@ const Home = () => {
             viewport={{ once: true }}
           >
             {[
-              {icon: <FaUserGraduate />, name: "Dr. Emily Carter", role: "Lead Historian", bio: "Specializes in ancient civilizations and artifact authentication."},
-              {icon: <FaMicroscope />, name: "James Thompson", role: "Conservation Specialist", bio: "Expert in traditional restoration techniques."},
-              {icon: <FaBook />, name: "Sarah Mitchell", role: "Provenance Researcher", bio: "Dedicated to uncovering the history behind every artifact."},
+              {icon: <FaUserTie />, name: "Dr. Sarah Chen", role: "Lead Environmental Scientist", bio: "Specializes in ecological risk assessment and remediation."},
+              {icon: <FaMicroscope />, name: "James Wilson", role: "Radiation Safety Officer", bio: "Expert in nuclear safety protocols and contamination control."},
+              {icon: <FaFileAlt />, name: "Emily Rodriguez", role: "Regulatory Compliance Specialist", bio: "Dedicated to ensuring projects meet all environmental regulations."},
             ].map((expert, index) => (
               <motion.div 
                 key={index} 
@@ -198,13 +310,13 @@ const Home = () => {
             className="text-3xl font-serif text-amber-800 text-center mb-12"
             variants={fadeInUp}
           >
-            What Our Collectors Say
+            What Our Clients Say
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {quote: "The authenticity and quality of the artifacts are unparalleled. A truly trustworthy source.", author: "John Doe"},
-              {quote: "The team's expertise and attention to detail are remarkable. Highly recommended!", author: "Jane Smith"},
-              {quote: "An exceptional experience from start to finish. The provenance research is impeccable.", author: "Michael Brown"},
+              {quote: "Their radiation safety protocols saved our project from costly delays. Exceptionally thorough.", author: "Michael Johnson, Energy Corp"},
+              {quote: "The most reliable environmental consultants we've worked with. Data is always impeccable.", author: "Lisa Wong, Urban Developers"},
+              {quote: "Turned our contaminated site into a development-ready property ahead of schedule.", author: "Robert Kline, Industrial Solutions"},
             ].map((testimonial, index) => (
               <motion.div 
                 key={index} 
