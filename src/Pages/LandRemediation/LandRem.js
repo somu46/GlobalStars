@@ -13,24 +13,19 @@ const LandRem = () => {
       {/* Hero Section */}
       <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">Land Remediation Services</h1>
+          <h1 className="text-5xl font-bold mb-6">
+          Our environment is an inimitable creation of mother nature</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Restoring ecosystems and transforming contaminated land into safe, usable spaces through advanced remediation technologies
+          ” Our Experts build shiel to safeguard you from contamination “
           </p>
           <Link to='/an-appointment'>
           <button onClick={handleScrolle} className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
             Request Site Assessment
           </button></Link>
-          <div className="mt-12">
-            <img 
-              src="https://cdn-icons-png.flaticon.com/512/3079/3079155.png" 
-              alt="Environmental Recovery" 
-              className="w-32 h-32 mx-auto object-contain"
-            />
-          </div>
+          
         </div>
       </div>
-
+      
       {/* Key Services */}
       <div className="max-w-6xl mx-auto py-16 px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Remediation Solutions</h2>
@@ -147,6 +142,123 @@ const LandRem = () => {
           </Link>
         </div>
       </div>
+
+{/* Copied*/}
+<div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
+  {/* What is Land Remediation? */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">What is Land Remediation?</h2>
+      <p className="text-gray-600 leading-relaxed">
+        Taking care of our environment today is the sustainable act for the generations of tomorrow. Land remediation service deals with an exclusive process of removing contaminant materials or particles from surface water, terrestrial, and sediments. This technique is performed for keeping the atmosphere pollution and radiation safe.The solemn criterion of our land remediation service in India is to protect all living beings and the mother nature from the damaging effects of land radiation
+      </p>
+    </div>
+  </div>
+
+  {/* Main Causes of Land Contamination */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Main Causes of Land Contamination</h2>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Deforestation
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Mining &amp; mineral's extraction
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Natural source (Cosmic rays and UV rays)
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Urbanization
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Man made radiation (Gamma &amp; X-rays)
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Agriculture
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Industrial or Nuclear waste products
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Objectives of Our Land Remediation Service in India */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Objectives of Our Land Remediation Service in India</h2>
+      <p className="text-gray-600 leading-relaxed mb-4">
+        We are The Change You Wish to see In the EnvironmentIt is our priority, whether public or private to provide full-fledged safety and security to the employees at the workplace. The employees working in the field of radiation exposure, during or after the remediation of contamination, the risk of health hazards is comparatively high. They are easily prone to life taking diseases like cancer, tumors, posterior subcapsular cataracts, hampers reproductive system, permanent hormonal disbalance and others.
+      </p>
+      <p className="text-gray-600 leading-relaxed">
+        At Aah Windsor House our expertise performs their crucial responsibilities as per AERB/BARC norms. Our well- certified and years experienced engineers, geologists and technician team serves you cost-effective services in India.
+      </p>
+      <p className="text-gray-600 leading-relaxed mt-4">
+        The prime motto of our exclusive environmental or land remediation service in India is to minimize and detect the malicious source of ionizing radiation.
+      </p>
+    </div>
+  </div>
+
+  {/* We are skilled at! */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">We are skilled at!</h2>
+      <ul className="space-y-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Land inspection and detection for ionizing radiation
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Provide occupational safety to the employees
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Land evaluation and survey
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Waste Management
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Why sky is our limit? */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Why sky is our limit?</h2>
+      <ul className="space-y-3 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> We have emmerged successfully as the global leader in the industry of radiation protection. We serve our clients across the sea, via UK, USA, and Switzerland
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Technologically advanced devices and instruments are used
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> AERB certified RSOs and highly qualified engineers, technicians & professionals
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> An accredited Organization
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Always a step ahead to save environment from radiation & waste hazards
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Saves the client from legal troubles, related to environmental safety and security
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Assist in upholding the smooth run of ecological as well marine balance
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Detect and reduces the negative impact of radioactive materials
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2 ">•</span> Protect you and your beloved ones from the threat of cancer and other diseases
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }
