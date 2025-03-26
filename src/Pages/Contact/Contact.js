@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-import { FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa';
+import { FaMapMarkerAlt,  FaClock } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
 import CoverImg from '../../Assets/ContactUs.jpeg'
 
@@ -110,8 +110,8 @@ const Contact = () => {
               <div className="flex items-start space-x-4">
                 <FaMapMarkerAlt className="text-amber-600 mt-1 text-xl" />
                 <div>
-                  <p className="text-gray-700">123 Heritage Lane</p>
-                  <p className="text-gray-700">Antiquaria, HT 45678</p>
+                  <p className="text-gray-700">1st Flor,Ashbrook House </p>
+                  <p className="text-gray-700">Sutton -in-Ashfield NG17 1BE</p>
                   <p className="text-gray-700">United Kingdom</p>
                 </div>
               </div>
@@ -120,12 +120,12 @@ const Contact = () => {
             <div className="bg-amber-100 p-6 rounded-xl">
               <h3 className="text-xl font-serif text-amber-800 mb-4">Direct Contacts</h3>
               <div className="space-y-4">
-                <div className="flex items-center space-x-4">
+                {/* <div className="flex items-center space-x-4">
                   <FaPhone className="text-amber-600" />
                   <a href="tel:+911234567890" className="text-gray-700 hover:text-amber-700">
                     +91 1234567890
                   </a>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-4">
                   <FaClock className="text-amber-600" />
                   <p className="text-gray-700">Mon-Fri : 10am - 6pm</p>
