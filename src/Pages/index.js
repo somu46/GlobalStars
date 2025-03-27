@@ -9,7 +9,7 @@ import LandRem from './LandRemediation/LandRem'
 import LitigationSupport from './LitigationSupport/LitigationSupport'
 import RadiationSafety from './RadiationSafety/RadiationSafety'
 import TestAnal from './TestingAnalysis/TestAnal'
-
+import TandC from './TandC/TandC'
 import Error from './Error/Error'
 
 export {
@@ -24,5 +24,6 @@ export {
     LitigationSupport ,
     RadiationSafety ,
     TestAnal ,
+    TandC ,
     Error
  };
