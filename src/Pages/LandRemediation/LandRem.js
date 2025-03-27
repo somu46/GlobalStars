@@ -259,8 +259,9 @@ const LandRem = () => {
   </div>
 </div>
 
+
     </div>
   )
 }
 
-export default LandRem
+export default LandRem;
