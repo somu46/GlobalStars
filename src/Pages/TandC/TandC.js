@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TermsAndConditions = () => {
+
+    const handleScrolle = () => {
+        window.scrollTo(0, 0);
+      };
+
   return (
     <div className="max-w-4xl mx-auto p-5 font-sans text-gray-800 leading-relaxed">
       <header className="text-center mb-8 pb-5 border-b border-gray-200">
@@ -112,7 +117,7 @@ const TermsAndConditions = () => {
 
         <section className="mt-10 pt-5 border-t border-gray-200">
             
-          <p>For any queries, contact us at: <Link to='/contact-us'><strong className="font-semibold text-blue-600 underline">Contact Us</strong></Link></p>
+          <p>For any queries, contact us at: <Link onClick={handleScrolle} to='/contact-us'><strong className="font-semibold text-blue-600 underline">Contact Us</strong></Link></p>
         </section>
 
         <div className="mt-10 p-5 bg-gray-50 rounded-lg border-l-4 border-blue-500">
