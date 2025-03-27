@@ -1,9 +1,7 @@
 import Home from '../Pages/Home/Home'
 import About from '../Pages/AboutUs/AboutUs'
 import Contact from '../Pages/Contact/Contact'
-import Blog from '../Pages/Blogs/Blogs'
 import Faqs from '../Pages/FAQs/Faqs'
-
 import Photo from '../Pages/Gallery/Photos/Photos'
 import BoroscopeInspection from './BoroscopeInspection/BoroscopeInspection'
 import EnvironmentalP from './EnvironmentalProtect/EnvironmentalP'
@@ -18,7 +16,6 @@ export {
     Home , 
     About ,
     Contact , 
-    Blog ,
     Faqs ,
     Photo , 
     BoroscopeInspection, 

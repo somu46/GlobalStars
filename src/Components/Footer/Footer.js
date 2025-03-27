@@ -61,11 +61,7 @@ const Footer = () => {
                   Our Collections
                 </Link>
               </li>
-              <li onClick={handleScrolle}>
-                <Link to="/blogs" className="text-sm text-gray-300 hover:text-amber-400 transition">
-                  Blogs
-                </Link>
-              </li>
+              
               <li onClick={handleScrolle}>
                 <Link to="/faqs" className="text-sm text-gray-300 hover:text-amber-400 transition">
                   Faqs

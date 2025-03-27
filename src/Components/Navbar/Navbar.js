@@ -104,15 +104,8 @@ const handleClick=()=>{
             </ul>
           </li>
           <li >
-            
             <NavLink activeClass="active"  to="/our-collections"
              onClick={handleHistory}>Our Collections</NavLink>
-           
-          </li>
-          
-          <li>
-            <NavLink activeClass="active"  to="/blogs"
-             onClick={handleHistory}>Blogs</NavLink>
           </li>
           <li>
             <NavLink activeClass="active"  to="/faqs"
@@ -287,24 +280,10 @@ const handleClick=()=>{
                 </ul>
               )}
             </li>
-            <li>
-              <NavLink
-                to="/blogs"
-                className={({ isActive }) =>
-                  isActive ? 'text-red-500 font-bold' : 'text-gray-700'
-                }
-               
-                 onClick={handleMobileHistory}
-              >
-                Blogs
-              </NavLink>
-            </li>
             
             <li >
-            
             <NavLink activeClass="active"  to="/our-collections"
              onClick={handleMobileHistory}>Our Collections</NavLink>
-           
           </li>
            
             <li>
