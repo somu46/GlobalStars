@@ -154,6 +154,96 @@ const BoroscopeInspection = () => {
           
         </div>
       </div>
+
+{/* Copied*/}
+<div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
+  {/* What is Land Remediation? */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">What is Borescope?</h2>
+      <p className="text-gray-600 leading-relaxed">
+      A borescope allows the examiner to examine the places that are otherwise inaccessible by the naked eyes. A borescope is a valuable optical tool and especially designed for non-destructive testing.
+      </p>
+    </div>
+  </div>
+
+  {/* Main Causes of Land Contamination */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Types of Borescope:</h2>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Rigid Borescope:
+          <p>This kind of borescope depicts crystal clear images to the viewer. It provides by far the finest quality of the image and works effortlessly in the inspecting field of hydraulic manifold bodies, gunsmithing, fuel injectors, and automotive cylinders.</p>
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Flexible Borescope:
+          <p>It is a twistable rod that is attached to the camera to the eyepiece on one end. This type of borescope is used for varieties of purpose such as for peeking into curvy pipes, vents, chimney, ducts etc.</p>
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Video Borescope:
+          <p>It is popularly also known as inspection camera. A video camera is linked at the end of this device, the ability to capture the still images or video of this equipment is exclusive.</p>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+
+  {/* Objectives of Our Land Remediation Service in India */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Why our borescope inspection in India is reliable?</h2>
+      <p className="text-gray-600 leading-relaxed mb-4">
+      Quality Assurance Device used by Our Specialized team!
+      </p>
+      <p>Aah Windsor Houseprofessionals uses advanced and upgraded borescope for inspecting the medium. Our inspecting device comprises of rod lens system, a reliable lens system, fibre optic image guides a CMOS camera or CCD. Our borescope is introduced into the element being assessed, without disturbing the subject of interest.</p>
+      <p>Advanced Development in Our Borescope Inspection Service</p>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> High-resolution videoscope 
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Highly configured to measure minor defects, it is highly essential for examining of aircraft turbines
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Highly elevated CMOS sensors
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Exceedingly firm images
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* We are skilled at! */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Use of Our Borescope</h2>
+      <ul className="space-y-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> It is used for non-destructive testing techniques for identifying imperfections.
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Generally used in the visual review of truck engines, automotive, aircraft engines, diesel engines, aeroderivative, industrial gas turbines etc.
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Used for forensic application’s in law enforcement and building inspection.
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Our borescope inspection service in India has emerged globally to control the high radiation intensity caused by aircraft engines and other sources.
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Recognized by the Government of India, AERB.
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Complete video recording of our inspection.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
     </div>
   )
 }
