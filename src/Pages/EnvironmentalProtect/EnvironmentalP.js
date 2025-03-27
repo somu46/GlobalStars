@@ -141,6 +141,101 @@ const EnvironmentalP = () => {
           </div>
         </div>
       </div>
+
+{/* Copied*/}
+<div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
+  {/* What is Land Remediation? */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">What is Environmental Protection?</h2>
+      <p className="text-gray-600 leading-relaxed">
+      Nature is a unique creation of almighty. It is the government as well as our concern to safeguard our natural environment from the harmful impact of radiation waste products.The practice of protecting the atmosphere from the harmful influence is typically known as Environmental Protection. This act is extremely beneficial for both the living beings and environment.      </p>
+    </div>
+  </div>
+
+  {/* Main Causes of Land Contamination */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Why Environmental Protection is Crucial?</h2>
+      <p><b>Best way to protect the creations of mother nature</b></p>
+      <p>Due to the excessive pressure of population, technology, and over-consumption, the biophysical environment is degrading drastically. Without a single doubt, the parameter of the pollution in the atmosphere is rising day by day. Thus, it is clearly recognized by every sphere of the government, private as well as public sector.</p>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Planting trees, afforestation is the sole key for protecting the environment
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Use of solar energy
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span>Minimize the use of fossil fuels via, petrol, coal etc.
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Using eco-friendly and biodegradable products
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Disposal of the waste products in an apposite manner
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  {/* Objectives of Our Land Remediation Service in India */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Meet the leading and well-known Environmental Protection Organization in India!</h2>
+      <p className="text-gray-600 leading-relaxed mb-4">
+      We, at The Aah Windsor House provide finest quality radioactive safety amenities to our users. We are government registered Organization and known for our litheness and reactivity. Our radiation protection service has successfully established its brand in India as well as across the borders. We support our environment and human lives to be risk-free from negative vibes of ionizing radiation. Our talented expertise works under the supervision of AERB and provides fruitful service to its clients. We humbly appreciate our client’s perspective that we are the well-known environmental protection service provider in India.
+      </p>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> We cover all ecological media & monitoring program
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Methodical planning
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span>Illustration supervision
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Statistics justification
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span>Provides shielding from the harmful waste of radioactive materials
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  {/* Why sky is our limit? */}
+  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
+    <div className="p-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Why Aah Windsor House?</h2>
+      <p>The Aah Windsor Househas emerged successfully as the topmost safety service provider in India. Our earnest agenda is to guard the atmosphere and human lives from the malicious vibes of ionizing radiation</p>
+      <ul className="space-y-3 text-gray-600">
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span>Notable advice on disposal of radioactive residual
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Plan and procedure of Rad survey
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Provide RPA and RWA facilities
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Take all the vital steps to safety & precautions
+        </li>
+        <li className="flex items-start">
+          <span className="text-red-600 mr-2">•</span> Environmental bearing valuation
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }
