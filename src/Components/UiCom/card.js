@@ -24,27 +24,7 @@ const EmployeeCard = () => {
       image: 'https://randomuser.me/api/portraits/men/67.jpg',
       
     },
-    {
-      id: 4,
-      name: 'Emma Wilson',
-      role: 'Laboratory Technician',
-      image: 'https://randomuser.me/api/portraits/women/28.jpg',
-      
-    },
-    {
-      id: 5,
-      name: 'David Brown',
-      role: 'Field Specialist',
-      image: 'https://randomuser.me/api/portraits/men/75.jpg',
-      
-    },
-    {
-      id: 6,
-      name: 'Priya Patel',
-      role: 'Research Assistant',
-      image: 'https://randomuser.me/api/portraits/women/63.jpg',
-      
-    }
+    
   ];
 
   return (
