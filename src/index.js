@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Components/Root/root';
-import { About, Contact, Faqs, LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem ,Error } from './Pages';
+import { About, Contact, Faqs, LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem ,TandC ,Error  } from './Pages';
 import { Toaster } from 'react-hot-toast';
 import Gallery from './Pages/Gallery/Gallery';
 import Appointment from './Pages/Appointment/Appointment';
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'terms-and-conditions',
-        element: <Faqs/>
+        element: <TandC/>
       },
       {
         path: 'our-collections',

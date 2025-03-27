@@ -72,6 +72,11 @@ const Footer = () => {
                 Contact Us
                 </Link>
               </li>
+              <li onClick={handleScrolle}>
+                <Link to="/terms-and-conditions" className="text-sm text-gray-300 hover:text-amber-400 transition">
+                Terms and Conditions
+                </Link>
+              </li>
             </ul>
           </div>
 
