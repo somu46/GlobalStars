@@ -1,115 +1,80 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const Card = () => {
+const EmployeeCard = () => {
+  // Sample employee data
+  const employees = [
+    {
+      id: 1,
+      name: 'John Smith',
+      role: 'Senior Scientist',
+      image: 'https://randomuser.me/api/portraits/men/32.jpg',
+      
+    },
+    {
+      id: 2,
+      name: 'Sarah Johnson',
+      role: 'Quality Control Manager',
+      image: 'https://randomuser.me/api/portraits/women/44.jpg',
+      
+    },
+    {
+      id: 3,
+      name: 'Michael Chen',
+      role: 'Chemical Engineer',
+      image: 'https://randomuser.me/api/portraits/men/67.jpg',
+      
+    },
+    {
+      id: 4,
+      name: 'Emma Wilson',
+      role: 'Laboratory Technician',
+      image: 'https://randomuser.me/api/portraits/women/28.jpg',
+      
+    },
+    {
+      id: 5,
+      name: 'David Brown',
+      role: 'Field Specialist',
+      image: 'https://randomuser.me/api/portraits/men/75.jpg',
+      
+    },
+    {
+      id: 6,
+      name: 'Priya Patel',
+      role: 'Research Assistant',
+      image: 'https://randomuser.me/api/portraits/women/63.jpg',
+      
+    }
+  ];
+
   return (
-    <StyledWrapper>
-      <div className="card">
-        <div className="image" />
-        <div className="card-info">
-          <span>George Johnson</span>
-          <p>Support Specialist</p>
+    <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Team</h1> */}
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {employees.map((employee) => (
+            <div key={employee.id} className="bg-white  rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div className="p-6">
+                <div className="flex flex-col m-auto">
+                  <img 
+                    className="h-32 w-32 rounded-full object-cover border-2 border-blue-500 m-auto"
+                    src={employee.image}
+                    alt={employee.name}
+                  />
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800">{employee.name}</h2>
+                    <p className="text-blue-600 font-medium">{employee.role}</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          ))}
         </div>
-        <a className="button" href="####">Folow</a>
       </div>
-    </StyledWrapper>
+    </div>
   );
-}
+};
 
-const StyledWrapper = styled.div`
-  .card {
-    width: 350px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    background-color: #fffffe;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
-  }
-
-  .card::before {
-    content: "";
-    width: 350px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom: 3px solid #fefefe;
-    background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    transition: all 0.3s ease;
-  }
-
-  .card * {
-    z-index: 1;
-  }
-
-  .image {
-    width: 90px;
-    height: 90px;
-    background-color: #1468BF;
-    border-radius: 50%;
-    border: 4px solid #fefefe;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-  }
-
-  .card-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    transition: all 0.5s ease;
-  }
-
-  .card-info span {
-    font-weight: 600;
-    font-size: 24px;
-    color: #161A42;
-    margin-top: 15px;
-    line-height: 5px;
-  }
-
-  .card-info p {
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .button {
-    text-decoration: none;
-    background-color: #1468BF;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 5px;
-    border: 1px solid white;
-    transition: all 0.5s ease;
-  }
-
-  .card:hover {
-    width: 300px;
-    border-radius: 250px;
-  }
-
-  .card:hover::before {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border-bottom: none;
-    transform: scale(0.95);
-  }
-
-  .card:hover .card-info {
-    transform: translate(0%,-15%);
-  }
-
-  .button:hover {
-    background-color: #FF6844;
-    transform: scale(1.1);
-  }`;
-
-export default Card;
+export default EmployeeCard;

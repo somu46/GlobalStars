@@ -83,9 +83,7 @@ const AboutUs = () => {
           </h2>
           <div className="flex flex-wrap flex-row gap-8 justify-center items-center">
             <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            
           </div>
         </div>
         {/* Why Choose Us */}
