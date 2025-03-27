@@ -193,7 +193,7 @@
   background-color: #b71c1c;
 }
 /* Show Mobile Hamburger and Menu on Small Screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .navbar-left {
     margin-left: -5px;
   }
