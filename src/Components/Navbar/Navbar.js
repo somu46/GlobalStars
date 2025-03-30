@@ -44,8 +44,8 @@ const handleClick=()=>{
 }
 
   return (
-    <nav className="navbar     md:bg-transparent  bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
-      <div className="navbar-left  ">
+    <nav className="navbar md:bg-transparent bg-opacity-50 md:bg-opacity-70 backdrop-blur-md">
+      <div className="navbar-left">
         <Link to="/"
          onClick={handleHistory}>  
           <img src={Logo} alt="Logo" className="logo" />
@@ -117,9 +117,8 @@ const handleClick=()=>{
           </li>
           
         </ul>
-        
-         
-        <div className=" w-auto">
+      </div>
+      <div className="navbar-right w-auto">
         <NavLink
         onClick={handleHistory}
               to='/an-appointment'
@@ -127,8 +126,6 @@ const handleClick=()=>{
           <Button title="Make an Appointment" fun={handleClick}/>
           </NavLink>
           </div> 
-       
-      </div>
 
      
     {/* Mobile Menu */}
