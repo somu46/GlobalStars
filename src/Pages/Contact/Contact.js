@@ -120,12 +120,7 @@ const Contact = () => {
             <div className="bg-amber-100 p-6 rounded-xl">
               <h3 className="text-xl font-serif text-amber-800 mb-4">Direct Contacts</h3>
               <div className="space-y-4">
-                {/* <div className="flex items-center space-x-4">
-                  <FaPhone className="text-amber-600" />
-                  <a href="tel:+911234567890" className="text-gray-700 hover:text-amber-700">
-                    +91 1234567890
-                  </a>
-                </div> */}
+                
                 <div className="flex items-center space-x-4">
                   <FaClock className="text-amber-600" />
                   <p className="text-gray-700">Mon-Fri : 10am - 6pm</p>

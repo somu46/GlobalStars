@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 const Faqs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
+  };
+  
   const faqs = [
     {
       question: "How do you verify the authenticity of antiques?",
@@ -99,7 +103,7 @@ const Faqs = () => {
           <p className="text-gray-700 mb-6">
             Our curatorial team is available to assist with specialized inquiries
           </p>
-          <Link to='/contact-us' className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors" >
+          <Link onClick={handleScrolle} to='/contact-us' className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors" >
             Contact Our Experts
           </Link>
         </div>

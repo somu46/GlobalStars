@@ -314,7 +314,7 @@ const handleClick=()=>{
               <NavLink
               to='/an-appointment'
               >
-            <Button  
+            <Button  onClick={handleMobileHistory}
             title="Make An Appointment"
             fun={handleClick}
             />

@@ -67,7 +67,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Link 
+            <Link onClick={handleScrolle}
               to="/our-collections" 
               className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center transition-colors"
             >
@@ -142,7 +142,7 @@ const Home = () => {
               <p className="mb-4">
                 With a team of expert environmental scientists, engineers, and legal specialists, we ensure that every project meets the highest standards of environmental compliance and sustainability.
               </p>
-              <Link 
+              <Link onClick={handleScrolle}
                 to="/about-us" 
                 className="text-amber-600 hover:text-amber-700 font-semibold underline"
               >

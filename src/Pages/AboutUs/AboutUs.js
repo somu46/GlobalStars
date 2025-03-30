@@ -1,15 +1,15 @@
 import React from "react";
-import {
-  FaHistory,
-  FaCertificate,
-  FaSearch,
-  FaBrush,
-  FaBookOpen,
-} from "react-icons/fa";
+import { FaHistory,FaCertificate,FaSearch, FaBrush,FaBookOpen} from "react-icons/fa";
 import CoverImg from "../../Assets/AboutUs.jpeg";
 import Card from "../../Components/UiCom/card";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
+
+  const handleScrolle = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
@@ -172,9 +172,11 @@ const AboutUs = () => {
             that from age to age nothing changes and yet everything is
             completely different." - Aldous Huxley
           </p>
-          <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors border-2 border-amber-100">
-            Explore Our Archives
+          <Link to='/our-collections' onClick={handleScrolle}>
+          <button  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors border-2 border-amber-100">
+            Explore Our Collections
           </button>
+          </Link>
         </div>
       </div>
     </div>
