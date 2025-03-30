@@ -196,7 +196,7 @@ const BoroscopeInspection = () => {
       <p className="text-gray-600 leading-relaxed mb-4">
       Quality Assurance Device used by Our Specialized team!
       </p>
-      <p>Aah Windsor Houseprofessionals uses advanced and upgraded borescope for inspecting the medium. Our inspecting device comprises of rod lens system, a reliable lens system, fibre optic image guides a CMOS camera or CCD. Our borescope is introduced into the element being assessed, without disturbing the subject of interest.</p>
+      <p>Global Starsprofessionals uses advanced and upgraded borescope for inspecting the medium. Our inspecting device comprises of rod lens system, a reliable lens system, fibre optic image guides a CMOS camera or CCD. Our borescope is introduced into the element being assessed, without disturbing the subject of interest.</p>
       <p>Advanced Development in Our Borescope Inspection Service</p>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
         <li className="flex items-start">

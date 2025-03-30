@@ -234,7 +234,7 @@ const LitigationSupport = () => {
               Our Service towards Our Clients
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              We, at The Aah Windsor House Corporation care for Plaintiff(s), or
+              We, at The Global Stars Corporation care for Plaintiff(s), or
               Defendant(s) in Lawsuits that includes latest or historic property
               damage, radioactivity exposure, environmental pollution and bond
               dispute(s). Our main criterion is to acknowledge cases based upon

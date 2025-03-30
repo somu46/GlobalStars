@@ -170,9 +170,9 @@ const RadiationSafety = () => {
   {/* Why sky is our limit? */}
   <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
     <div className="p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Aah Windsor House as a Radiation Protection Service Provider
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Global Stars as a Radiation Protection Service Provider
       </h2>
-      <p>In a general term, radiation protection is also known as radiological protection. We at Aah Windsor House, offer the best radiation protection service in India to defend the environment and all living things from the damaging influence of ionizing radiation. Our top-notch radiation safety services in India are an overwhelming gift in medical and industrial sector.</p>
+      <p>In a general term, radiation protection is also known as radiological protection. We at Global Stars, offer the best radiation protection service in India to defend the environment and all living things from the damaging influence of ionizing radiation. Our top-notch radiation safety services in India are an overwhelming gift in medical and industrial sector.</p>
     </div>
   </div>
 
