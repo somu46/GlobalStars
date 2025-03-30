@@ -77,8 +77,8 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif text-amber-800 mb-6">
+        <div className="text-center ">
+          <h2 className="text-3xl font-serif text-amber-800 ">
             Our Team
           </h2>
           <div className="flex flex-wrap flex-row gap-8 justify-center items-center">
