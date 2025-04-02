@@ -1,5 +1,5 @@
 import React from "react";
-import CoverImg from "../../Assets/LitigationSup.jpeg";
+import CoverImg from "../../../Assets/LitigationSup.jpeg";
 import { Link } from "react-router-dom";
 
 const LitigationSupport = () => {

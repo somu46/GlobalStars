@@ -1,5 +1,5 @@
 import React from 'react'
-import CoverImg from '../../Assets/RadiationSafety.jpeg'
+import CoverImg from '../../../Assets/RadiationSafety.jpeg'
 import { Link } from 'react-router-dom'
 
 const RadiationSafety = () => {

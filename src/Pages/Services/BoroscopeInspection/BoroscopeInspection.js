@@ -1,6 +1,7 @@
 import React from 'react'
-import CoverImg from '../../Assets/ABI.jpeg'
+// import CoverImg from '../../Assets/ABI.jpeg'
 import { Link } from 'react-router-dom'
+import CoverImg from '../../../Assets/ABI.jpeg'
 
 const BoroscopeInspection = () => {
 

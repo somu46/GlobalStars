@@ -1,5 +1,5 @@
 import React from 'react'
-import CoverImg from '../../Assets/EVP.jpeg'
+import CoverImg from '../../../Assets/EVP.jpeg'
 import { Link } from 'react-router-dom'
 
 const EnvironmentalP = () => {

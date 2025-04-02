@@ -1,5 +1,5 @@
 import React from 'react'
-import CoverImg from '../../Assets/TestAnal.jpeg'
+import CoverImg from '../../../Assets/TestAnal.jpeg'
 
 const TestAnal = () => {
   return (

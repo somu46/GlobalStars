@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Components/Root/root';
-import { About, Contact, Faqs, LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem ,TandC ,Error  } from './Pages';
+import { About, Contact, Faqs,  TandC ,Error } from './Pages';
 import { Toaster } from 'react-hot-toast';
 import Gallery from './Pages/Gallery/Gallery';
 import Appointment from './Pages/Appointment/Appointment';
+import { LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem } from './Pages';
  
 const router = createBrowserRouter([
   {

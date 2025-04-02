@@ -1,5 +1,5 @@
 import React from 'react'
-import CoverImg from '../../Assets/LandRem.jpeg'
+import CoverImg from '../../../Assets/LandRem.jpeg'
 import { Link } from 'react-router-dom'
 
 const LandRem = () => {
