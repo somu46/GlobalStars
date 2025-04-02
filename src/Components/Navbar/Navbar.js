@@ -74,7 +74,7 @@ const handleClick=()=>{
           </li>
           
           <li className="nav-item gallery-dropdown flex flex-row">
-            <span>Services</span>
+            <p className="font-semibold">Services</p>
             <ArrowDropDownIcon/>
             <ul className="dropdown bg-white bg-opacity-50 md:bg-opacity-70  backdrop-blur-md">
               <li>
@@ -114,6 +114,10 @@ const handleClick=()=>{
           <li>
             <NavLink activeClass="active"  to="/contact-us"
              onClick={handleHistory}>Contact Us</NavLink>
+          </li>
+          <li>
+            <NavLink activeClass="active"  to="/terms-and-conditions"
+             onClick={handleHistory}>Terms and Conditions</NavLink>
           </li>
           
         </ul>
@@ -305,6 +309,18 @@ const handleClick=()=>{
                  onClick={handleMobileHistory}
               >
                 Contact Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/terms-and-conditions"
+                className={({ isActive }) =>
+                  isActive ? 'text-red-500 font-bold' : 'text-gray-700'
+                }
+              
+                 onClick={handleMobileHistory}
+              >
+                Terms and Conditions
               </NavLink>
             </li>
             <li>
