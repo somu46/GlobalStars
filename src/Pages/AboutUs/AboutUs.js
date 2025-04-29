@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHistory,FaBookOpen} from "react-icons/fa";
+import { FaHistory,FaBookOpen, FaHandshake} from "react-icons/fa";
 import CoverImg from "../../Assets/AboutUs.jpeg";
 import Card from "../../Components/UiCom/card";
 import { Link } from "react-router-dom";
@@ -68,7 +68,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <FaBookOpen className="text-amber-600 mt-1 text-2xl" />
+              <FaHandshake className="text-amber-600 mt-1 text-4xl" />
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-amber-800">
                 Our Commitment:
