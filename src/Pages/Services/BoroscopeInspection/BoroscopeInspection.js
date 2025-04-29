@@ -157,9 +157,9 @@ const BoroscopeInspection = () => {
       </div>
 
       {/* Information Sections */}
-      <div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
+      <div className="max-w-6xl mx-auto px-4 py-8 space-y-8">
         {/* What is Borescope? */}
-        <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-blue-600">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden ">
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">What is Borescope?</h2>
             <p className="text-gray-600 leading-relaxed">
@@ -169,7 +169,7 @@ const BoroscopeInspection = () => {
         </div>
 
         {/* Types of Borescope */}
-        <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-blue-600">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden ">
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Types of Borescope:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -196,7 +196,7 @@ const BoroscopeInspection = () => {
         </div>
 
         {/* Why our service is reliable */}
-        <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-blue-600">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden ">
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Why our borescope inspection in India is reliable?</h2>
             <p className=" leading-relaxed mb-4 font-semibold text-blue-800">
@@ -223,7 +223,7 @@ const BoroscopeInspection = () => {
         </div>
 
         {/* Use of Our Borescope */}
-        <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-blue-600">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden ">
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Use of Our Borescope</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

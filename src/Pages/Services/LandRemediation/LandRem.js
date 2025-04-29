@@ -3,264 +3,182 @@ import CoverImg from '../../../Assets/LandRem.jpeg'
 import { Link } from 'react-router-dom'
 
 const LandRem = () => {
-
   const handleScrolle = () => {
     window.scrollTo(0, 0);
   };
   
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">
-          Our environment is an inimitable creation of mother nature</h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-          ” Our Experts build shiel to safeguard you from contamination “
+      <div className="relative h-[32rem] bg-cover bg-center flex items-center justify-center bg-gray-900 bg-opacity-60 bg-blend-multiply" style={{ backgroundImage: `url(${CoverImg})` }}>
+        <div className="max-w-6xl mx-auto px-4 text-center text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Our environment is an inimitable creation of mother nature
+          </h1>
+          <p className="text-xl lg:text-2xl mb-8 max-w-2xl mx-auto italic font-light">
+            ” Our Experts build shield to safeguard you from contamination “
           </p>
           <Link to='/an-appointment'>
-          <button onClick={handleScrolle} className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
-            Request Site Assessment
-          </button></Link>
-          
-        </div>
-      </div>
-      
-      {/* Key Services */}
-      <div className="max-w-6xl mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Remediation Solutions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {[
-            {icon: '☣️', title: 'Contaminant Removal', desc: 'Soil & groundwater purification'},
-            {icon: '📝', title: 'Site Assessment', desc: 'Comprehensive contamination analysis'},
-            {icon: '🔬', title: 'Bioremediation', desc: 'Microbial treatment solutions'},
-            {icon: '🛡️', title: 'Risk Management', desc: 'Exposure prevention strategies'},
-          ].map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">{service.title}</h3>
-              <p className="text-gray-600">{service.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Environmental Impact */}
-      <div className="bg-emerald-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img 
-              src="https://cdn-icons-png.flaticon.com/512/1067/1067555.png" 
-              alt="Eco Recovery" 
-              className="w-full h-64 object-contain"
-            />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Sustainable Land Recovery</h2>
-            <ul className="space-y-6">
-              {[
-                'Heavy metal contamination treatment',
-                'Petroleum hydrocarbon cleanup',
-                'Agricultural land restoration',
-                'Industrial site rehabilitation',
-                'Brownfield redevelopment',
-                'Ecological impact assessment'
-              ].map((item, index) => (
-                <li key={index} className="flex items-start space-x-3">
-                  <div className="bg-emerald-600 text-white rounded-full p-1.5 mt-1">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Process Timeline */}
-      <div className="max-w-6xl mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Remediation Process</h2>
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 relative">
-          {[
-            {step: '1', title: 'Site Investigation', desc: 'Comprehensive analysis'},
-            {step: '2', title: 'Risk Assessment', desc: 'Contaminant evaluation'},
-            {step: '3', title: 'Treatment Plan', desc: 'Customized solutions'},
-            {step: '4', title: 'Implementation', desc: 'Remediation execution'},
-            {step: '5', title: 'Verification', desc: 'Post-treatment validation'}
-          ].map((stage, index) => (
-            <div key={index} className="flex flex-col items-center text-center relative z-10">
-              <div className="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">
-                {stage.step}
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{stage.title}</h3>
-              <p className="text-gray-600 text-sm">{stage.desc}</p>
-              {index < 4 && (
-                <div className="hidden md:block absolute top-6 right-[-45%] w-24 border-t-2 border-dashed border-gray-400"></div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Technologies */}
-      <div className="bg-gray-100 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Advanced Technologies</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              'Chemical Oxidation',
-              'Thermal Treatment',
-              'Soil Washing',
-              'Phytoremediation',
-              'Nanoremediation',
-              'Electrokinetics',
-              'Permeable Barriers',
-              'Vapor Extraction'
-            ].map((tech, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg text-center shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-gray-700 font-medium">{tech}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-emerald-900 text-white py-16">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold mb-6">Reclaim Your Land Today</h2>
-          <p className="text-gray-300 mb-8 text-lg">Contact our environmental specialists for sustainable remediation solutions</p>
-          <Link to='/an-appointment'>
-          <button
-          onClick={()=>window.scrollTo(0,0)}
-          className="bg-white text-emerald-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
-            Start Land Recovery
-          </button>
+            <button 
+              onClick={handleScrolle} 
+              className="bg-white text-emerald-800 px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:scale-105 transform transition duration-300 text-lg"
+            >
+              Request Site Assessment
+            </button>
           </Link>
         </div>
       </div>
+      
+      {/* Content Sections */}
+      <div className="max-w-7xl mx-auto px-4 py-16 space-y-16">
+        {/* What is Land Remediation? */}
+        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+          
+          <div className="p-8 pl-12">
+            <div className="flex items-center mb-6">
+              <div className="bg-red-100 p-3 rounded-full mr-4">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800">What is Land Remediation?</h2>
+            </div>
+            <p className="text-gray-600 leading-relaxed text-lg pl-4 border-l-2 border-gray-200">
+              Taking care of our environment today is the sustainable act for the generations of tomorrow. Land remediation service deals with an exclusive process of removing contaminant materials or particles from surface water, terrestrial, and sediments. This technique is performed for keeping the atmosphere pollution and radiation safe.The solemn criterion of our land remediation service in India is to protect all living beings and the mother nature from the damaging effects of land radiation.
+            </p>
+          </div>
+        </div>
 
-{/* Copied*/}
-<div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
-  {/* What is Land Remediation? */}
-  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
-    <div className="p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">What is Land Remediation?</h2>
-      <p className="text-gray-600 leading-relaxed">
-        Taking care of our environment today is the sustainable act for the generations of tomorrow. Land remediation service deals with an exclusive process of removing contaminant materials or particles from surface water, terrestrial, and sediments. This technique is performed for keeping the atmosphere pollution and radiation safe.The solemn criterion of our land remediation service in India is to protect all living beings and the mother nature from the damaging effects of land radiation
-      </p>
-    </div>
-  </div>
+        {/* Main Causes of Land Contamination */}
+        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+          
+          <div className="p-8 pl-12">
+            <div className="flex items-center mb-6">
+              <div className="bg-red-100 p-3 rounded-full mr-4">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800">Main Causes of Land Contamination</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pl-4 border-l-2 border-gray-200">
+              {[
+                "Deforestation",
+                "Mining & mineral's extraction",
+                "Natural source (Cosmic rays and UV rays)",
+                "Urbanization",
+                "Man made radiation (Gamma & X-rays)",
+                "Agriculture",
+                "Industrial or Nuclear waste products"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start">
+                  <div className="bg-red-100 p-1 rounded-full mr-3 mt-1">
+                    <svg className="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-600 text-lg">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-  {/* Main Causes of Land Contamination */}
-  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
-    <div className="p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Main Causes of Land Contamination</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Deforestation
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Mining &amp; mineral's extraction
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Natural source (Cosmic rays and UV rays)
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Urbanization
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Man made radiation (Gamma &amp; X-rays)
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Agriculture
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Industrial or Nuclear waste products
-        </li>
-      </ul>
-    </div>
-  </div>
+        {/* Objectives of Our Land Remediation Service in India */}
+        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+          
+          <div className="p-8 pl-12">
+            <div className="flex items-center mb-6">
+              <div className="bg-red-100 p-3 rounded-full mr-4">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800">Objectives of Our Land Remediation Service in India</h2>
+            </div>
+            <div className="space-y-6 text-gray-600 text-lg pl-4 border-l-2 border-gray-200">
+              <p>
+                We are The Change You Wish to see In the EnvironmentIt is our priority, whether public or private to provide full-fledged safety and security to the employees at the workplace. The employees working in the field of radiation exposure, during or after the remediation of contamination, the risk of health hazards is comparatively high. They are easily prone to life taking diseases like cancer, tumors, posterior subcapsular cataracts, hampers reproductive system, permanent hormonal disbalance and others.
+              </p>
+              <p>
+                At Global Stars our expertise performs their crucial responsibilities as per AERB/BARC norms. Our well- certified and years experienced engineers, geologists and technician team serves you cost-effective services in India.
+              </p>
+              <p>
+                The prime motto of our exclusive environmental or land remediation service in India is to minimize and detect the malicious source of ionizing radiation.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  {/* Objectives of Our Land Remediation Service in India */}
-  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
-    <div className="p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Objectives of Our Land Remediation Service in India</h2>
-      <p className="text-gray-600 leading-relaxed mb-4">
-        We are The Change You Wish to see In the EnvironmentIt is our priority, whether public or private to provide full-fledged safety and security to the employees at the workplace. The employees working in the field of radiation exposure, during or after the remediation of contamination, the risk of health hazards is comparatively high. They are easily prone to life taking diseases like cancer, tumors, posterior subcapsular cataracts, hampers reproductive system, permanent hormonal disbalance and others.
-      </p>
-      <p className="text-gray-600 leading-relaxed">
-        At Global Stars our expertise performs their crucial responsibilities as per AERB/BARC norms. Our well- certified and years experienced engineers, geologists and technician team serves you cost-effective services in India.
-      </p>
-      <p className="text-gray-600 leading-relaxed mt-4">
-        The prime motto of our exclusive environmental or land remediation service in India is to minimize and detect the malicious source of ionizing radiation.
-      </p>
-    </div>
-  </div>
+        {/* We are skilled at! */}
+        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+          
+          <div className="p-8 pl-12">
+            <div className="flex items-center mb-6">
+              <div className="bg-red-100 p-3 rounded-full mr-4">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800">We are skilled at!</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pl-4 border-l-2 border-gray-200">
+              {[
+                "Land inspection and detection for ionizing radiation",
+                "Provide occupational safety to the employees",
+                "Land evaluation and survey",
+                "Waste Management"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <div className="bg-red-100 p-1 rounded-full mr-3 mt-1">
+                    <svg className="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-600 text-lg">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-  {/* We are skilled at! */}
-  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
-    <div className="p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">We are skilled at!</h2>
-      <ul className="space-y-2 text-gray-600">
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Land inspection and detection for ionizing radiation
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Provide occupational safety to the employees
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Land evaluation and survey
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Waste Management
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  {/* Why sky is our limit? */}
-  <div className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-red-600">
-    <div className="p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Why sky is our limit?</h2>
-      <ul className="space-y-3 text-gray-600">
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> We have emmerged successfully as the global leader in the industry of radiation protection. We serve our clients across the sea, via UK, USA, and Switzerland
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Technologically advanced devices and instruments are used
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> AERB certified RSOs and highly qualified engineers, technicians & professionals
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> An accredited Organization
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Always a step ahead to save environment from radiation & waste hazards
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Saves the client from legal troubles, related to environmental safety and security
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Assist in upholding the smooth run of ecological as well marine balance
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2">•</span> Detect and reduces the negative impact of radioactive materials
-        </li>
-        <li className="flex items-start">
-          <span className="text-red-600 mr-2 ">•</span> Protect you and your beloved ones from the threat of cancer and other diseases
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-    </div>
+        {/* Why sky is our limit? */}
+        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden p-6 ">
+          
+            <div className="flex items-center mb-6">
+              <div className="bg-red-100 p-3 rounded-full mr-4">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800">Why sky is our limit?</h2>
+            </div>
+            <div className="space-y-4 pl-4 border-l-2 border-gray-200">
+              {[
+                "We have emmerged successfully as the global leader in the industry of radiation protection. We serve our clients across the sea, via UK, USA, and Switzerland",
+                "Technologically advanced devices and instruments are used",
+                "AERB certified RSOs and highly qualified engineers, technicians & professionals",
+                "An accredited Organization",
+                "Always a step ahead to save environment from radiation & waste hazards",
+                "Saves the client from legal troubles, related to environmental safety and security",
+                "Assist in upholding the smooth run of ecological as well marine balance",
+                "Detect and reduces the negative impact of radioactive materials",
+                "Protect you and your beloved ones from the threat of cancer and other diseases"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start group">
+                  <div className="bg-red-100 p-1 rounded-full mr-3 mt-1 group-hover:bg-red-200 transition-colors">
+                    <svg className="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-600 text-lg group-hover:text-gray-800 transition-colors">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    
   )
 }
 
