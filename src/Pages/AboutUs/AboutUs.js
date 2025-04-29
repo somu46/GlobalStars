@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHistory,FaCertificate,FaSearch, FaBrush,FaBookOpen} from "react-icons/fa";
+import { FaHistory,FaBookOpen} from "react-icons/fa";
 import CoverImg from "../../Assets/AboutUs.jpeg";
 import Card from "../../Components/UiCom/card";
 import { Link } from "react-router-dom";
@@ -13,44 +13,45 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
-      <div
-        className="relative h-96 bg-cover bg-center"
-        style={{ backgroundImage: `url(${CoverImg})` }}
-      >
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="text-5xl font-serif mb-4">Timeless Treasures</h1>
-          <p className="text-xl max-w-2xl mx-auto italic">
-            Preserving the past, curating history's finest artifacts
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: `url(${CoverImg})` }}>
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-5xl font-bold mb-6 text-white">
+          Our environment is an inimitable creation of mother nature</h1>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
+          ” Our Experts build shiel to safeguard you from contamination “
           </p>
+          <Link to='/an-appointment'>
+          <button onClick={handleScrolle} className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+            Request Site Assessment
+          </button></Link>
+          
         </div>
       </div>
 
       {/* Introduction Section */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif text-amber-800 mb-6">Our Story</h2>
-          <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
-            Established in 1952, Timeless Treasures has been a guardian of
-            history, specializing in the acquisition and preservation of
-            exceptional antiques. For three generations, our family has
-            connected collectors with extraordinary pieces that whisper stories
-            of bygone eras.
+          <h2 className="text-3xl font-serif text-amber-800 mb-6">We Shield to Yield, a Radiation risk-free Environment</h2>
+          <h4 className="text-xl font-semibold">Step ahead with Global Stars and let our earth stay “Alive and Kicking”</h4>
+          <p className="">
+          The world is spinning too fast and is undoubtedly heading towards a global revolution in the field of science and technology. This death-or-glory race is leading to an increase in the amount of pollution and radiation. Today, every nook and cranny is exposed to radiation. As a result, the chances of irreversible radiation damage to both human beings and environment cannot be ruled out. Radiation safety and protection is the need of the hour.“Global Stars” means something that shrouds you in, for safety. We strive to save you and your loved ones from radiation hazards. We are one among the world’s top-notch radiation service providers. Now we are looking forward to carve out a niche in the global scenario.
           </p>
+          <br/>
+          <p>We are one of the pioneers in field of radiation safety and protection services. Our team of experts, operating in India are committed to AERB radiation safety norms and follow proper guidelines. Our professionals use exclusive and upgraded equipment like Radiation Safety Jackets, Thyroid Collars, Radiation Monitors, TLD Badges, Radiation Survey Meters, GM Counters, etc. Evidently, our quality tested tools and techniques are the safest resort to handle radiation risks.</p>
+          <p>Our five-fold approach and outstanding services ensure radiation safety. We help corresponding industries to nourish and flourish without disturbing the ecological balance. We work upon measures to keep the environment healthy and happy. Remember, Love your planet because it loves you back.</p>
         </div>
 
         {/* Core Values */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
+        <div className=" gap-12 items-center mb-24">
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
               <FaHistory className="text-amber-600 mt-1 text-2xl" />
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-amber-800">
-                  Heritage Preservation
+                Our Mission:
                 </h3>
                 <p className="text-gray-700">
-                  Committed to maintaining historical integrity through
-                  meticulous conservation practices
+                We strive to save the environment from ionizing radiation hazards.Our mission is to offer one-stop solution to radiation safety services across the country.
                 </p>
               </div>
             </div>
@@ -59,23 +60,29 @@ const AboutUs = () => {
               <FaBookOpen className="text-amber-600 mt-1 text-2xl" />
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-amber-800">
-                  Historical Authentication
+                Our Values:
                 </h3>
                 <p className="text-gray-700">
-                  Comprehensive provenance research and certification for every
-                  artifact
+                Global Stars values your trust and never compromises on radiation safety. We conduct authentic testing via trusted equipment. For best results the sessions are also conducted with stakeholders and investors.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <FaBookOpen className="text-amber-600 mt-1 text-2xl" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-amber-800">
+                Our Commitment:
+                </h3>
+                <p>We devote our high quality services to let the nation be free of radiation risks. In addition, we assist several organisations for smooth running of business. Our forte is Radiation safety and protection services. We also provide assistance in the following spheres.</p>
+                <br/>
+                <p className="text-gray-700">   
+We devote our high quality services to let the nation be free of radiation risks. In addition, we assist several organisations for smooth running of business. Our forte is Radiation safety and protection services. We also provide assistance in the following spheres.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-xl border-4 border-amber-100">
-            <img
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-              alt="Antique Collection"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          
         </div>
         <div className="text-center ">
           <h2 className="text-3xl font-serif text-amber-800 ">
@@ -86,79 +93,10 @@ const AboutUs = () => {
             
           </div>
         </div>
-        {/* Why Choose Us */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif text-amber-800 mb-6">
-            Why Collectors Trust Us
-          </h2>
-          <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-            The distinguishing qualities that make us stewards of history
-          </p>
-        </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-600">
-            <FaCertificate className="text-4xl text-amber-600 mb-4" />
-            <h3 className="text-xl font-bold mb-4 text-amber-800">
-              Expert Authentication
-            </h3>
-            <p className="text-gray-700">
-              Multi-stage verification process with leading historians and
-              appraisers
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-600">
-            <FaSearch className="text-4xl text-amber-600 mb-4" />
-            <h3 className="text-xl font-bold mb-4 text-amber-800">
-              Rare Finds
-            </h3>
-            <p className="text-gray-700">
-              Access to exclusive private collections and estate acquisitions
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-600">
-            <FaBrush className="text-4xl text-amber-600 mb-4" />
-            <h3 className="text-xl font-bold mb-4 text-amber-800">
-              Conservation Services
-            </h3>
-            <p className="text-gray-700">
-              Museum-grade restoration by master craftsmen using traditional
-              techniques
-            </p>
-          </div>
-        </div>
 
         {/* Expertise Section */}
-        <div className="bg-amber-100 py-16 rounded-xl text-center">
-          <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="space-y-4">
-              <div className="text-4xl font-bold text-amber-800">70+</div>
-              <div className="text-sm uppercase tracking-wide text-gray-700">
-                Years Experience
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="text-4xl font-bold text-amber-800">15k+</div>
-              <div className="text-sm uppercase tracking-wide text-gray-700">
-                Artifacts Curated
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="text-4xl font-bold text-amber-800">98%</div>
-              <div className="text-sm uppercase tracking-wide text-gray-700">
-                Accuracy Rate
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="text-4xl font-bold text-amber-800">200+</div>
-              <div className="text-sm uppercase tracking-wide text-gray-700">
-                Era Specialists
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
 
       {/* CTA Section */}
