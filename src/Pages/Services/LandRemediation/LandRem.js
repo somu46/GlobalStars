@@ -21,7 +21,7 @@ const LandRem = () => {
           <Link to='/an-appointment'>
             <button 
               onClick={handleScrolle} 
-              className="bg-white text-emerald-800 px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:scale-105 transform transition duration-300 text-lg"
+              className="bg-white text-emerald-800 px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 shadow-lg hover:scale-105 transform transition duration-300 text-lg"
             >
               Request Site Assessment
             </button>

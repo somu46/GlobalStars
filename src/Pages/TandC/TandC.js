@@ -26,12 +26,12 @@ const TermsAndConditions = () => {
           <h2 className="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-4">1. Rice Puller Terms</h2>
           
           <div className="ml-5 mb-6">
-            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 1: 24-Hour Sitting Process</h3>
+            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 1: 24-Hour Sitting Conditions</h3>
             <ul className="list-disc pl-5 space-y-2">
               <li>A sample of <strong className="font-semibold text-gray-900">Mineral Water Test</strong> must be provided for verification.</li>
               <li>Upon approval, <strong className="font-semibold text-gray-900">two representatives from our side</strong> will visit the location.</li>
-              <li>A <strong className="font-semibold text-gray-900">24-hour sitting period</strong> is required before further proceedings.</li>
-              <li>After successful verification, the item will be placed under <strong className="font-semibold text-gray-900">Joint Custody</strong>.</li>
+              <li>A <strong className="font-semibold text-gray-900">24-hour time </strong> is required for sitting before further proceedings.</li>
+              <li>After a successful test, the article will be placed safely under <strong className="font-semibold text-gray-900">Joint Custody</strong>.</li>
               <li>The company will provide:
                 <ul className="list-disc pl-5 mt-2 space-y-1">
                   <li><strong className="font-semibold text-gray-900">100 Crores (₹100 Cr.) as a Token Amount</strong></li>
@@ -44,13 +44,13 @@ const TermsAndConditions = () => {
           </div>
 
           <div className="ml-5 mb-6">
-            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 2: If 24-Hour Sitting is Not Possible</h3>
+            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 2: Expect of 24-Hour Sitting </h3>
             <ul className="list-disc pl-5 space-y-2">
-              <li>A <strong className="font-semibold text-gray-900">Location Chip Stick</strong> will be placed by our team for tracking.</li>
-              <li>The <strong className="font-semibold text-gray-900">Owner must visit our office</strong> to complete the Agreement with proper <strong className="font-semibold text-gray-900">KYC verification</strong>.</li>
-              <li>The company will provide:
+              <li>A <strong className="font-semibold text-gray-900">Location Chip (Tracker)</strong> will be stuck/placed with the article by our team for tracking.</li>
+              <li>The <strong className="font-semibold text-gray-900">The Owner must visit our office</strong> to make an Agreement with company including the proper <strong className="font-semibold text-gray-900">KYC</strong>.</li>
+              <li>After The Agreement
                 <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li><strong className="font-semibold text-gray-900">5 Crores (₹5 Cr.) as an Initial Token</strong></li>
+                  <li><strong className="font-semibold text-gray-900">Company will pay 5 Crores (₹5 Cr.) as an Initial Token as per the agreement</strong></li>
                 </ul>
               </li>
               <li>The next day:
