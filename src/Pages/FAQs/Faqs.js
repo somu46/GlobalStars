@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+import CoverImg from '../../Assets/bg3.jpeg'
 const Faqs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -43,8 +43,11 @@ const Faqs = () => {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
-      <div className="relative h-64 bg-[url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <div className="relative h-96 bg-cover bg-center flex items-center justify-center" style={{ 
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${CoverImg})`,
+        backgroundPosition: 'center'
+      }}>
+        
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-4xl font-serif mb-4">Antique Collector's Guide</h1>
           <p className="text-lg italic">Answers to Your Curatorial Questions</p>

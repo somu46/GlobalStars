@@ -1,6 +1,6 @@
 import React from "react";
 import { FaHistory,FaBookOpen, FaHandshake} from "react-icons/fa";
-import CoverImg from "../../Assets/AboutUs.jpeg";
+import CoverImg from "../../Assets/bg1.jpeg";
 import Card from "../../Components/UiCom/card";
 import { Link } from "react-router-dom";
 

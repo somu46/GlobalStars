@@ -105,7 +105,7 @@ const handleClick=()=>{
           </li>
           <li >
             <NavLink activeClass="active"  to="/our-collections"
-             onClick={handleHistory}>Our Gallery</NavLink>
+             onClick={handleHistory}>Gallery</NavLink>
           </li>
           <li>
             <NavLink activeClass="active"  to="/faqs"
@@ -284,7 +284,7 @@ const handleClick=()=>{
             
             <li >
             <NavLink activeClass="active"  to="/our-collections"
-             onClick={handleMobileHistory}>Our Gallery</NavLink>
+             onClick={handleMobileHistory}>Gallery</NavLink>
           </li>
            
             <li>
