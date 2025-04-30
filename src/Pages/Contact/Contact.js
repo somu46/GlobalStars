@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-import { FaMapMarkerAlt,  FaClock } from 'react-icons/fa';
+// import { FaMapMarkerAlt,  FaClock } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
 import CoverImg from '../../Assets/ContactUs.jpeg'
 
@@ -103,37 +103,6 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-amber-100 p-6 rounded-xl">
-              <h3 className="text-xl font-serif text-amber-800 mb-4">Visit Our Gallery</h3>
-              <div className="flex items-start space-x-4">
-                <FaMapMarkerAlt className="text-amber-600 mt-1 text-xl" />
-                <div>
-                  <p className="text-gray-700">1st Flor,Ashbrook House </p>
-                  <p className="text-gray-700">Sutton -in-Ashfield NG17 1BE</p>
-                  <p className="text-gray-700">United Kingdom</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-amber-100 p-6 rounded-xl">
-              <h3 className="text-xl font-serif text-amber-800 mb-4">Direct Contacts</h3>
-              <div className="space-y-4">
-                
-                <div className="flex items-center space-x-4">
-                  <FaClock className="text-amber-600" />
-                  <p className="text-gray-700">Mon-Fri : 10am - 6pm</p>
-                </div>
-                <div className="flex items-center space-x-4">
-                <FaClock className="text-amber-600" />
-                <p className='text-gray-700'>Sat : 10am - 2pm</p>
-                </div>
-              </div>
-            </div>
-
-            
-          </div>
         </div>
       </div>
     </div>
