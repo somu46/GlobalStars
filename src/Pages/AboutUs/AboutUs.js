@@ -75,9 +75,7 @@ const AboutUs = () => {
                 </h3>
                 <p>We devote our high quality services to let the nation be free of radiation risks. In addition, we assist several organisations for smooth running of business. Our forte is Radiation safety and protection services. We also provide assistance in the following spheres.</p>
                 <br/>
-                <p className="text-gray-700">   
-We devote our high quality services to let the nation be free of radiation risks. In addition, we assist several organisations for smooth running of business. Our forte is Radiation safety and protection services. We also provide assistance in the following spheres.
-                </p>
+                
               </div>
             </div>
           </div>

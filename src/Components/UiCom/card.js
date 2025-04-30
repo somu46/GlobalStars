@@ -6,22 +6,17 @@ const EmployeeCard = () => {
   const employees = [
     {
       id: 1,
-      name: 'John Smith',
-      role: 'Senior Scientist',
+      name: 'Suman Dutta',
+      role: 'Managing Director',
       image: Avatar,
     },
     {
       id: 2,
-      name: 'Sarah Johnson',
-      role: 'Quality Control Manager',
+      name: 'Anikit Gupta',
+      role: 'CEO',
       image: Avatar,
     },
-    {
-      id: 3,
-      name: 'Michael Chen',
-      role: 'Chemical Engineer',
-      image: Avatar,
-    },
+    
   ];
   
   

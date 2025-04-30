@@ -44,10 +44,10 @@ const TermsAndConditions = () => {
           </div>
 
           <div className="ml-5 mb-6">
-            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 2: Expect of 24-Hour Sitting </h3>
+            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 2: Except of 24-Hour Sitting </h3>
             <ul className="list-disc pl-5 space-y-2">
               <li>A <strong className="font-semibold text-gray-900">Location Chip (Tracker)</strong> will be stuck/placed with the article by our team for tracking.</li>
-              <li>The <strong className="font-semibold text-gray-900">The Owner must visit our office</strong> to make an Agreement with company including the proper <strong className="font-semibold text-gray-900">KYC</strong>.</li>
+              <li>The <strong className="font-semibold text-gray-900">Owner must visit our office</strong> to make an Agreement with company including the proper <strong className="font-semibold text-gray-900">KYC</strong>.</li>
               <li>After The Agreement
                 <ul className="list-disc pl-5 mt-2 space-y-1">
                   <li><strong className="font-semibold text-gray-900">Company will pay 5 Crores (₹5 Cr.) as an Initial Token as per the agreement</strong></li>
@@ -63,7 +63,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className="ml-5">
-            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 3: Same-Day Work</h3>
+            <h3 className="text-xl font-medium text-gray-800 mb-3">Option 3: Same Day Work</h3>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong className="font-semibold text-gray-900">All expenses must be borne by the Owner</strong>.</li>
             </ul>
