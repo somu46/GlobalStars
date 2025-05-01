@@ -42,46 +42,60 @@ const AboutUs = () => {
         </div>
 
         {/* Core Values */}
-        <div className=" gap-12 items-center mb-24">
-          <div className="space-y-8">
-            <div className="flex items-start space-x-4">
-              <FaHistory className="text-amber-600 mt-1 text-2xl" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-amber-800">
-                Our Mission:
-                </h3>
-                <p className="text-gray-700">
-                We strive to save the environment from ionizing radiation hazards.Our mission is to offer one-stop solution to radiation safety services across the country.
-                </p>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24 px-4 sm:px-6 lg:px-0">
+  {/* Mission Card */}
+  
+  <div className="flex items-start space-x-4">
+      <div className="bg-amber-100 p-3 rounded-full flex-shrink-0">
+        <FaBookOpen className="text-amber-600 text-xl" />
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold mb-3 text-amber-800">
+          Our Mission
+        </h3>
+        <p className="text-gray-700 leading-relaxed">
+        We strive to save the environment from ionizing radiation hazards.Our mission is to offer one-stop solution to radiation safety services across the country.
+        </p>
+      </div>
+    </div>
 
-            <div className="flex items-start space-x-4">
-              <FaBookOpen className="text-amber-600 mt-1 text-2xl" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-amber-800">
-                Our Values:
-                </h3>
-                <p className="text-gray-700">
-                Global Stars values your trust and never compromises on radiation safety. We conduct authentic testing via trusted equipment. For best results the sessions are also conducted with stakeholders and investors.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <FaHandshake className="text-amber-600 mt-1 text-4xl" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-amber-800">
-                Our Commitment:
-                </h3>
-                <p>We devote our high quality services to let the nation be free of radiation risks. In addition, we assist several organisations for smooth running of business. Our forte is Radiation safety and protection services. We also provide assistance in the following spheres.</p>
-                <br/>
-                
-              </div>
-            </div>
-          </div>
+  
 
-          
-        </div>
+  {/* Values Card */}
+ 
+    <div className="flex items-start space-x-4">
+      <div className="bg-amber-100 p-3 rounded-full flex-shrink-0">
+        <FaHistory className="text-amber-600 text-xl" />
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold mb-3 text-amber-800">
+          Our Values
+        </h3>
+        <p className="text-gray-700 leading-relaxed">
+          Global Stars values your trust and never compromises on radiation safety. We conduct authentic testing via trusted equipment. For best results the sessions are also conducted with stakeholders and investors.
+        </p>
+      </div>
+    </div>
+  
+
+  {/* Commitment Card */}
+  
+    <div className="flex items-start space-x-4">
+      <div className="bg-amber-100 p-3 rounded-full flex-shrink-0">
+        <FaHandshake className="text-amber-600 text-xl" />
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold mb-3 text-amber-800">
+          Our Commitment
+        </h3>
+        <p className="text-gray-700 leading-relaxed">
+          We devote our high quality services to let the nation be free of radiation risks. In addition, we assist several organisations for smooth running of business. Our forte is Radiation safety and protection services. We also provide assistance in the following spheres.
+        </p>
+      </div>
+    
+  </div>
+</div>
+        
         <div className="text-center ">
           <h2 className="text-3xl font-serif text-amber-800 ">
             Our Team

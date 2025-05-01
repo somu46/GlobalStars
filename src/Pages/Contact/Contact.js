@@ -110,7 +110,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-[25%] bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center text-center mx-auto"
+                className="lg:w-[25%]  bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center text-center mx-auto"
               >
                 <FaPaperPlane className="mr-2" />
                 Send Message

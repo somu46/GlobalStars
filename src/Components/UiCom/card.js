@@ -22,13 +22,9 @@ const EmployeeCard = () => {
   
 
   return (
-    <div className="bg-transparent py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Team</h1> */}
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 ">
+<div className="flex flex-col lg:flex-row  gap-12 mt-10  ">
           {employees.map((employee) => (
-            <div key={employee.id} className="bg-white  rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div key={employee.id} className="bg-white border border-gray-500 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               
                 <div className="flex flex-col m-auto p-12 ">
                   <img 
@@ -46,8 +42,7 @@ const EmployeeCard = () => {
             
           ))}
         </div>
-      </div>
-    </div>
+
   );
 };
 
