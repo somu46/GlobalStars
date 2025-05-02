@@ -1,11 +1,8 @@
 import React from 'react'
 import CoverImg from '../../../Assets/TestAnal.jpeg'
-import { Link } from 'react-router-dom';
+
 const TestAnal = () => {
   
-    const handleScroll = () => {
-      window.scrollTo(0, 0);
-    };
   return (
     <div className=" py-1">
       <div className="relative h-96 bg-cover bg-center flex items-center justify-center" style={{ 
@@ -17,11 +14,7 @@ const TestAnal = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-200">
             Our expertise inspection you can rely upon 
           </p>
-          <Link to='/an-appointment'>
-            <button onClick={handleScroll} className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg">
-              Schedule Inspection
-            </button>
-          </Link>
+         
 
         </div>
       </div>

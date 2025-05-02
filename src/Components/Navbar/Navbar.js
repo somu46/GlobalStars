@@ -1,11 +1,11 @@
 import  { useState } from "react";
 import "./Navbar.css";
 import Hamburger from "hamburger-react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Logo from '../../Assets/logo.png';
 import { motion} from 'framer-motion';
-import Button from "../UiCom/Button";
+
 
 const variants = {
   open: {
@@ -24,7 +24,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   // const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const navigate=useNavigate();
+  
   
   
 
@@ -37,11 +37,6 @@ const handleMobileHistory=()=>{
   setIsOpen(false);
 }
 
-const handleClick=()=>{
-  setIsOpen(!isOpen);
-  navigate('/book', { state: { id: 12523 } });
-
-}
 
   return (
     <nav className="navbar md:bg-transparent bg-opacity-50 md:bg-opacity-70 backdrop-blur-md">
@@ -123,12 +118,7 @@ const handleClick=()=>{
         </ul>
       </div>
       <div className="navbar-right w-auto">
-        <NavLink
-        onClick={handleHistory}
-              to='/an-appointment'
-              >
-          <Button title="Make an Appointment" fun={handleClick}/>
-          </NavLink>
+        
           </div> 
 
      
@@ -323,16 +313,7 @@ const handleClick=()=>{
                 Terms and Conditions
               </NavLink>
             </li>
-            <li>
-              <NavLink
-              to='/an-appointment'
-              >
-            <Button  onClick={handleMobileHistory}
-            title="Make An Appointment"
-            fun={handleClick}
-            />
-            </NavLink>
-            </li>
+            
           </ul>
         </nav>
       </motion.div>

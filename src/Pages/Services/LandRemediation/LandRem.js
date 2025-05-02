@@ -1,11 +1,9 @@
 import React from 'react'
-import CoverImg from '../../../Assets/LandRem.jpeg'
-import { Link } from 'react-router-dom'
+import CoverImg from '../../../Assets/bg6.jpeg'
+
 
 const LandRem = () => {
-  const handleScrolle = () => {
-    window.scrollTo(0, 0);
-  };
+  
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
@@ -18,14 +16,7 @@ const LandRem = () => {
           <p className="text-xl lg:text-2xl mb-8 max-w-2xl mx-auto italic font-light">
             ” Our Experts build shield to safeguard you from contamination “
           </p>
-          <Link to='/an-appointment'>
-            <button 
-              onClick={handleScrolle} 
-              className="bg-white text-emerald-800 px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 shadow-lg hover:scale-105 transform transition duration-300 text-lg"
-            >
-              Request Site Assessment
-            </button>
-          </Link>
+          
         </div>
       </div>
       

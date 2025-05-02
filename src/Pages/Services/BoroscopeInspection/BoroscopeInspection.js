@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import CoverImg from '../../../Assets/ABI.jpeg';
 
 const BoroscopeInspection = () => {
-  const handleScroll = () => {
-    window.scrollTo(0, 0);
-  };
-
+  
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -19,11 +16,7 @@ const BoroscopeInspection = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-200">
             Precision internal inspection solutions for complex machinery and confined spaces
           </p>
-          <Link to='/an-appointment'>
-            <button onClick={handleScroll} className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg">
-              Schedule Inspection
-            </button>
-          </Link>
+          
           <div className="mt-12 animate-bounce">
             <img 
               src="https://cdn-icons-png.flaticon.com/512/1993/1993464.png" 
@@ -250,11 +243,7 @@ const BoroscopeInspection = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Precision Inspection Solutions</h2>
           <p className="text-gray-300 mb-8 text-lg">Contact our certified inspectors for non-destructive testing needs</p>
-          <Link to='/an-appointment'>
-            <button onClick={handleScroll} className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
-              Request Inspection
-            </button>
-          </Link>
+          
         </div>
       </div>
     </div>

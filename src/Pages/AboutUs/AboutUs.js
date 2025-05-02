@@ -2,13 +2,11 @@ import React from "react";
 import { FaHistory,FaBookOpen, FaHandshake} from "react-icons/fa";
 import CoverImg from "../../Assets/bg1.jpeg";
 import Card from "../../Components/UiCom/card";
-import { Link } from "react-router-dom";
+
 
 const AboutUs = () => {
 
-  const handleScrolle = () => {
-    window.scrollTo(0, 0);
-  };
+
 
   return (
     <div className="min-h-screen bg-amber-50">
@@ -20,10 +18,7 @@ const AboutUs = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
           ” Our Experts build shiel to safeguard you from contamination “
           </p>
-          <Link to='/an-appointment'>
-          <button onClick={handleScrolle} className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
-            Request Site Assessment
-          </button></Link>
+         
           
         </div>
       </div>
@@ -122,11 +117,7 @@ const AboutUs = () => {
             that from age to age nothing changes and yet everything is
             completely different." - Aldous Huxley
           </p>
-          <Link to='/our-collections' onClick={handleScrolle}>
-          <button  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors border-2 border-amber-100">
-            Explore Our Collections
-          </button>
-          </Link>
+          
         </div>
       </div>
     </div>

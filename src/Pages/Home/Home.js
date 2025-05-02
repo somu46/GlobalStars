@@ -17,7 +17,7 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Cover from '../../Assets/CoverPhoto.jpeg';
+import Cover from '../../Assets/bg3.jpeg';
 
 const Home = () => {
   const fadeInUp = {
@@ -67,12 +67,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Link onClick={handleScrolle}
-              to="/our-collections" 
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center transition-colors"
-            >
-              Explore Collections <FaChevronRight className="ml-2" />
-            </Link>
+            
           </motion.div>
         </div>
       </div>

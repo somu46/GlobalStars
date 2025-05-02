@@ -1,11 +1,7 @@
 import React from "react";
 import CoverImg from "../../../Assets/LitigationSup.jpeg";
-import { Link } from "react-router-dom";
 
 const LitigationSupport = () => {
-  const handleScrolle = () => {
-    window.scrollTo(0, 0);
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -22,14 +18,7 @@ const LitigationSupport = () => {
             Comprehensive legal consulting and technical expertise for complex
             litigation matters
           </p>
-          <Link to="/an-appointment">
-            <button
-              onClick={handleScrolle}
-              className="bg-white text-indigo-800 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg"
-            >
-              Schedule Consultation
-            </button>
-          </Link>
+          
         </div>
       </div>
 
@@ -203,11 +192,7 @@ const LitigationSupport = () => {
           <p className="text-gray-300 mb-8 text-lg">
             Contact us for a confidential case evaluation
           </p>
-          <Link to="/an-appointment">
-            <button className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
-              Request Case Review
-            </button>
-          </Link>
+          
         </div>
       </div>
       {/* Copied*/}

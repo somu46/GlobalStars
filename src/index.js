@@ -7,7 +7,7 @@ import Root from './Components/Root/root';
 import { About, Contact, Faqs,  TandC ,Error } from './Pages';
 import { Toaster } from 'react-hot-toast';
 import Gallery from './Pages/Gallery/Gallery';
-import Appointment from './Pages/Appointment/Appointment';
+
 import { LitigationSupport ,TestAnal, BoroscopeInspection, EnvironmentalP, RadiationSafety, LandRem } from './Pages';
  
 const router = createBrowserRouter([
@@ -39,10 +39,7 @@ const router = createBrowserRouter([
         path: 'our-collections',
         element : <Gallery/>
       },
-      {
-        path: 'an-appointment',
-        element : <Appointment/>
-      },
+     
       {
         path: 'land-remediation',
         element: <LandRem/>
