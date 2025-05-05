@@ -153,13 +153,13 @@ const Footer = () => {
               >
                 <FaInstagram className="h-6 w-6" />
               </a>
-              {/* <a
-                href="https://youtube.com"
+              <a
+                href="https://youtube.com/@globalstars-k9w"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="YouTube"
               >
                 <FaYoutube className="h-6 w-6" />
-              </a> */}
+              </a>
             </div>
 
             {/* Newsletter Subscription Section */}
