@@ -127,7 +127,7 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex space-x-4 mt-4 mx-auto justify-center">
               <a
-                href="mailto:globalstarglobalstar90@gmail.com"
+                href="mailto:sumandutta01981@gmail.com"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="Mail"
               >
