@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
-import { FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import logo from '../../Assets/logo.png'; // Import the logo image
 
 const Footer = () => {
@@ -139,13 +140,13 @@ const Footer = () => {
               >
                 <FaFacebookF className="h-6 w-6" />
               </a>
-              {/* <a
-                href="https://twitter.com"
+              <a
+                href="https://x.com/globalstars46"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="Twitter"
               >
-                <FaTwitter className="h-6 w-6" />
-              </a> */}
+                <FaXTwitter className="h-6 w-6" />
+              </a>
               <a
                 href="https://www.instagram.com/globalstars46"
                 className="text-gray-300 hover:text-amber-400 transition"
