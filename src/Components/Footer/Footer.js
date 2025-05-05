@@ -133,33 +133,33 @@ const Footer = () => {
                 <FaEnvelope className="h-6 w-6" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/golbalstars"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="Facebook"
               >
                 <FaFacebookF className="h-6 w-6" />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="Twitter"
               >
                 <FaTwitter className="h-6 w-6" />
-              </a>
+              </a> */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/globalstars46"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="Instagram"
               >
                 <FaInstagram className="h-6 w-6" />
               </a>
-              <a
+              {/* <a
                 href="https://youtube.com"
                 className="text-gray-300 hover:text-amber-400 transition"
                 aria-label="YouTube"
               >
                 <FaYoutube className="h-6 w-6" />
-              </a>
+              </a> */}
             </div>
 
             {/* Newsletter Subscription Section */}
